@@ -1,0 +1,990 @@
+{
+ "id": "feuerwehr",
+ "title": "Feuerwehr & Technische Hilfe",
+ "description": "Brände, eingeklemmte Personen, Gefahrgut und Hilfeleistungen.",
+ "version": 1,
+ "author": "ILS Rems-Murr Simulation",
+ "cases": [
+  {
+   "id": "fw-dachstuhl",
+   "draft": {
+    "title": "Flammen aus dem Dach",
+    "event": "Dachstuhl eines Einfamilienhauses brennt, Flammen schlagen aus den Ziegeln.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Übergreifen auf Nachbargebäude",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Georg Hertel",
+      "relationship": "Nachbar",
+      "position": "auf der Straße gegenüber",
+      "observations": "Beim Nachbarhaus brennt der Dachstuhl! Die Flammen kommen schon aus dem Dach.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "eben gesehen",
+      "unknown": [
+       "ob noch jemand im Haus ist"
+      ],
+      "voice": "männlich, etwa 60",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: die Familie ist draußen, glaube ich",
+       "Gefahren: viel Rauch, die Nachbarhäuser stehen dicht dran"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B4 · Dachstuhlbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-mfh",
+   "draft": {
+    "title": "Brand im Mehrfamilienhaus, Personen am Fenster",
+    "event": "Brand im zweiten Obergeschoss eines Mehrfamilienhauses, Personen rufen am Fenster um Hilfe.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Menschen in Gefahr, Treppenhaus verraucht",
+    "patients": 3,
+    "patientCondition": "zwei Personen mit Rauchgasintoxikation, eine mit Brandverletzung",
+    "requiredTypes": [
+     "HLF",
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Yasemin Koç",
+      "relationship": "Bewohnerin",
+      "position": "vor dem Haus mit ihren Kindern",
+      "observations": "Bei uns im Haus brennt es im zweiten Stock! Oben stehen noch Leute am Fenster und schreien.",
+      "consciousness": "Wir sind draußen.",
+      "timeline": "vor ein paar Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 35",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: oben am Fenster sind zwei Leute",
+       "Gefahren: Treppenhaus voller Rauch",
+       "Stockwerk: Brand im zweiten, Leute im dritten Stock"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Herr Engel",
+      "relationship": "Passant",
+      "position": "gegenüber",
+      "observations": "Hier brennt ein Wohnhaus, oben am Fenster stehen Leute!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "aufgeregt",
+      "delaySeconds": 60,
+      "answers": [],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B5 · Gebäudebrand MFH"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "fw-flaeche",
+   "draft": {
+    "title": "Böschung brennt",
+    "event": "An einer Bahnböschung brennt trockenes Gras auf etwa 50 Quadratmetern.",
+    "locationQuery": "Feldweg, {ort}",
+    "locationFallbackQuery": "Bahnhof, {ort}",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Ralf Henne",
+      "relationship": "Spaziergänger",
+      "position": "auf dem Feldweg",
+      "observations": "Hier brennt die Böschung neben den Gleisen, ungefähr so groß wie ein Garten.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade gesehen",
+      "unknown": [],
+      "voice": "männlich, etwa 65",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: der Wind treibt es Richtung Feld"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 500,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "B1 · Flächenbrand (bis 100m²)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-container",
+   "draft": {
+    "title": "Altpapiercontainer brennt",
+    "event": "Altpapiercontainer neben einem Supermarkt brennt.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Ludwig",
+      "relationship": "Mitarbeiter",
+      "position": "auf dem Parkplatz",
+      "observations": "Hinter unserem Markt brennt der Altpapiercontainer.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "eben bemerkt",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: steht zwei Meter von der Hauswand weg"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 300,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Supermarkt",
+    "keyword": "B1 · Containerbrand klein (z.B. Altpapier)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-schornstein",
+   "draft": {
+    "title": "Funken aus dem Kamin",
+    "event": "Aus einem Schornstein schlagen Funken und Flammen, Bewohner hatte den Kaminofen an.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "DLK"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Wolfgang Böhm",
+      "relationship": "Hausbesitzer",
+      "position": "im Garten",
+      "observations": "Aus meinem Schornstein kommen Flammen und Funken! Ich hatte den Kaminofen an.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "seit zehn Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: es knistert im Schornstein, Rauch im Dachboden"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 900,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B2 · Schornsteinbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-gewerbe",
+   "draft": {
+    "title": "Rauch aus Lagerhalle",
+    "event": "Aus einer Lagerhalle im Gewerbegebiet dringt dichter schwarzer Rauch.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Gasflaschen in der Halle",
+    "patients": 1,
+    "patientCondition": "leichte Rauchgasintoxikation",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Frau Sommer",
+      "relationship": "Angestellte",
+      "position": "auf dem Hof vor der Halle",
+      "observations": "Aus unserer Lagerhalle kommt ganz schwarzer Rauch! Wir haben alle rausgeschickt.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: alle draußen, einer hat Rauch eingeatmet",
+       "Gefahren: in der Halle lagern Gasflaschen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 2000,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Gewerbegebiet",
+    "keyword": "B4 · Brand Gewerbebetrieb"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-pkw-eingeklemmt",
+   "draft": {
+    "title": "PKW überschlagen",
+    "event": "PKW hat sich überschlagen und liegt auf dem Dach, Fahrer eingeklemmt.",
+    "locationQuery": "Landstraße, {ort}",
+    "locationFallbackQuery": "Kreisstraße, {ort}",
+    "hazards": "Benzingeruch",
+    "patients": 1,
+    "patientCondition": "eingeklemmter Fahrer, Kopfverletzung",
+    "requiredTypes": [
+     "HLF",
+     "RW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Dennis Kühn",
+      "relationship": "Zeuge",
+      "position": "neben dem Fahrzeug",
+      "observations": "Hier hat sich ein Auto überschlagen und liegt auf dem Dach! Der Fahrer hängt drin und kommt nicht raus.",
+      "consciousness": "Er ist wach und stöhnt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "schockiert",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: nur der Fahrer",
+       "Gefahren: es riecht nach Benzin",
+       "Verletzung: blutet am Kopf"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1100,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "H3 · Person eingeklemmt (PKW)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-lkw",
+   "draft": {
+    "title": "LKW-Fahrer eingeklemmt",
+    "event": "LKW ist auf ein Stauende aufgefahren, Fahrer in der Kabine eingeklemmt.",
+    "locationQuery": "Bundesstraße, {ort}",
+    "locationFallbackQuery": "Landstraße, {ort}",
+    "hazards": "Diesel läuft aus",
+    "patients": 1,
+    "patientCondition": "eingeklemmter LKW-Fahrer, Beinverletzungen",
+    "requiredTypes": [
+     "HLF",
+     "RW",
+     "ELW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Thorsten Meier",
+      "relationship": "Autofahrer im Stau",
+      "position": "steht beim LKW",
+      "observations": "Ein LKW ist hinten auf einen anderen drauf gefahren. Der Fahrer ist in der Kabine eingeklemmt.",
+      "consciousness": "Er ist wach, schreit vor Schmerzen.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: der LKW-Fahrer",
+       "Gefahren: Diesel läuft aus",
+       "Verletzung: Beine eingeklemmt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1500,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "H4 · Person eingeklemmt (LKW)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-person-wasser",
+   "draft": {
+    "title": "Person in der Rems",
+    "event": "Mann ist in die Rems gefallen und treibt ab.",
+    "locationQuery": "Rems, {ort}",
+    "locationFallbackQuery": "Fluss, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Person im Wasser, unterkühlt",
+    "requiredTypes": [
+     "HLF",
+     "BOOT",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Hannah Vogel",
+      "relationship": "Spaziergängerin",
+      "position": "am Ufer, läuft mit",
+      "observations": "Da ist ein Mann in den Fluss gefallen und treibt ab! Er schreit um Hilfe.",
+      "consciousness": "Er ist wach und strampelt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 30",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: ein Mann",
+       "Gefahren: starke Strömung nach dem Regen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 700,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "H2 · Person in Wasser/Eis"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-absturz",
+   "draft": {
+    "title": "Arbeiter in Schacht gestürzt",
+    "event": "Arbeiter ist in einen etwa vier Meter tiefen Schacht gestürzt.",
+    "locationQuery": "Baustelle, {ort}",
+    "locationFallbackQuery": "Gewerbegebiet, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Sturz aus vier Metern, Beinfraktur",
+    "requiredTypes": [
+     "HLF",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Vorarbeiter Kraft",
+      "relationship": "Vorarbeiter",
+      "position": "oben am Schacht",
+      "observations": "Ein Kollege ist in den Schacht gefallen, bestimmt vier Meter tief!",
+      "consciousness": "Er antwortet, wenn ich runterrufe.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "angespannt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: einer",
+       "Verletzung: er sagt, das Bein ist gebrochen",
+       "Gefahren: Schacht ist eng"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1200,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "H2 · Person abgestürzt"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-gasaustritt",
+   "draft": {
+    "title": "Bagger beschädigt Gasleitung",
+    "event": "Bagger hat eine Gasleitung beschädigt, es zischt laut.",
+    "locationQuery": "Hauptstraße, {ort}",
+    "locationFallbackQuery": "Schulstraße, {ort}",
+    "hazards": "Gasaustritt, Explosionsgefahr",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Fischer",
+      "relationship": "Baggerfahrer",
+      "position": "etwa fünfzig Meter entfernt",
+      "observations": "Ich habe mit dem Bagger eine Gasleitung erwischt, es zischt ganz laut und stinkt.",
+      "consciousness": "Mir geht es gut, wir sind alle weg.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "nervös",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand verletzt",
+       "Gefahren: Wohnhäuser direkt daneben"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "H3 · Gasaustritt (bestätigt)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-oel-gross",
+   "draft": {
+    "title": "Tanklastzug leckt",
+    "event": "Aus einem Tanklastzug läuft Diesel auf die Straße und in den Gully.",
+    "locationQuery": "Gewerbegebiet, {ort}",
+    "locationFallbackQuery": "Industriestraße, {ort}",
+    "hazards": "Diesel in der Kanalisation",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "GW-L",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Gefahrgut"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Sven Richter",
+      "relationship": "Fahrer",
+      "position": "neben dem Fahrzeug",
+      "observations": "An meinem Tanklaster ist ein Ventil kaputt, es läuft Diesel raus, schon in den Gully!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "seit fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "gestresst",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: läuft in die Kanalisation"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "G2 · Öl/Benzin läuft aus groß"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-insekten",
+   "draft": {
+    "title": "Wespennest am Kindergarten",
+    "event": "Großes Wespennest direkt am Eingang eines Kindergartens.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Frau Schäfer",
+      "relationship": "Erzieherin",
+      "position": "im Kindergarten",
+      "observations": "Bei uns am Eingang vom Kindergarten ist ein riesiges Wespennest, die Kinder trauen sich nicht raus.",
+      "consciousness": "Mir geht es gut, es wurde noch niemand gestochen.",
+      "timeline": "heute Morgen entdeckt",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand gestochen",
+       "Gefahren: Kinder spielen in der Nähe"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Kindergarten",
+    "keyword": "H0 · Insekten"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-tragehilfe",
+   "draft": {
+    "title": "Tragehilfe für den Rettungsdienst",
+    "event": "Rettungsdienst benötigt Hilfe, schwergewichtigen Patienten aus dem dritten Stock zu tragen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Notfallsanitäter Berg",
+      "relationship": "Rettungsdienst",
+      "position": "in der Wohnung beim Patienten",
+      "observations": "Hier spricht der Rettungsdienst, wir brauchen eine Tragehilfe, Patient ist sehr schwer, dritter Stock ohne Aufzug.",
+      "consciousness": "Der Patient ist stabil.",
+      "timeline": "jetzt",
+      "unknown": [],
+      "voice": "männlich, etwa 35",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: ein Patient",
+       "Gewicht: etwa 160 Kilo",
+       "Stockwerk: dritter Stock, enges Treppenhaus"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "H1 · Tragehilfe (ohne DLK)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-ausleuchten",
+   "draft": {
+    "title": "Ausleuchten für Polizeisuche",
+    "event": "Polizei bittet um Ausleuchtung eines Waldstücks bei einer Vermisstensuche.",
+    "locationQuery": "Waldparkplatz, {ort}",
+    "locationFallbackQuery": "Parkplatz, {ort}",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "GW-L"
+    ],
+    "expectedKeywordGroups": [
+     "FW Techn. Hilfe"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Polizeihauptmeister Roth",
+      "relationship": "Polizei",
+      "position": "am Waldparkplatz",
+      "observations": "Hier Polizei, wir suchen eine vermisste Person und brauchen Licht am Waldparkplatz.",
+      "consciousness": "Keine Verletzten bekannt.",
+      "timeline": "Suche läuft seit einer Stunde",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: eine vermisste Person",
+       "Zugang: Waldparkplatz an der Landstraße"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "H1 · Ausleuchten"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "fw-pflegeheim",
+   "draft": {
+    "title": "Rauch im Pflegeheim",
+    "event": "Im Pflegeheim brennt es in einem Bewohnerzimmer im ersten Stock, Flur verraucht.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "viele nicht gehfähige Bewohner",
+    "patients": 4,
+    "patientCondition": "vier Bewohner mit Rauchgasintoxikation",
+    "requiredTypes": [
+     "HLF",
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Pflegekraft Novak",
+      "relationship": "Nachtdienst",
+      "position": "am Eingang, Brandmeldeanlage hat ausgelöst",
+      "observations": "Bei uns im Pflegeheim brennt es in einem Zimmer im ersten Stock! Der Flur ist voller Rauch.",
+      "consciousness": "Ich bin draußen, die Kollegin evakuiert.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "gestresst",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: im ersten Stock sind zwölf Bewohner, viele bettlägerig",
+       "Gefahren: Rauch breitet sich aus"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1500,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Pflegeheim",
+    "keyword": "B5 · Brand Alten- und Pflegeheim"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "fw-waldbrand",
+   "draft": {
+    "title": "Rauch über dem Wald",
+    "event": "Im Wald brennt Unterholz auf größerer Fläche, starker Rauch.",
+    "locationQuery": "Wanderparkplatz, {ort}",
+    "locationFallbackQuery": "Waldweg, {ort}",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "TLF",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Jäger Strobel",
+      "relationship": "Jäger",
+      "position": "am Waldrand auf dem Hochsitz",
+      "observations": "Im Wald brennt es! Unterholz auf einer ziemlich großen Fläche, viel Rauch.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor zehn Minuten gesehen",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: trocken, Wind von Westen",
+       "Zugang: Forstweg vom Wanderparkplatz"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 2400,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "B2 · Waldbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  }
+ ]
+}

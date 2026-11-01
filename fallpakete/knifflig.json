@@ -1,0 +1,701 @@
+{
+ "id": "knifflig",
+ "title": "Knifflige Anrufe",
+ "description": "Kinder, Panik, Sprachbarrieren, Herunterspielen, falsche Ortsangaben – Gesprächsführung üben.",
+ "version": 1,
+ "author": "ILS Rems-Murr Simulation",
+ "cases": [
+  {
+   "id": "k-kind-oma",
+   "draft": {
+    "title": "Kind ruft an: Oma wacht nicht auf",
+    "event": "Oma, 76, liegt auf dem Sofa und reagiert nicht, Enkel, 7, ruft an.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "bewusstlos, Hypoglykämie",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Neurologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Ben",
+      "relationship": "Enkel, 7 Jahre",
+      "position": "im Wohnzimmer neben der Oma",
+      "observations": "Meine Oma wacht nicht auf.",
+      "consciousness": "Sie macht die Augen nicht auf, auch nicht wenn ich sie schüttle.",
+      "timeline": "nach dem Mittagessen",
+      "unknown": [
+       "die Adresse",
+       "Vorerkrankungen"
+      ],
+      "voice": "männlich, Kind, 7 Jahre",
+      "emotion": "ängstlich, leise",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: weiß ich nicht, sie ist alt",
+       "Atmung: der Bauch geht hoch und runter",
+       "Zugang: die Tür ist zu, ich kann aufmachen",
+       "Wer ist dabei: nur ich und Oma"
+      ],
+      "behavior": "Ein Kind, kennt die Adresse nicht genau, weiß aber den Straßennamen vom Schild draußen."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "260 · Bewußtlosigkeit"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Kind als Anrufer, Adresse unklar"
+  },
+  {
+   "id": "k-schwerhoerig",
+   "draft": {
+    "title": "Schwerhöriger Rentner",
+    "event": "Mann, 88, ist im Flur kurz bewusstlos gewesen, jetzt wieder wach, schwerhörig.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Synkope, Kopfplatzwunde",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Albert Eisele",
+      "relationship": "Betroffener selbst",
+      "position": "sitzt im Flur auf dem Boden",
+      "observations": "Ich bin umgefallen. Ich höre Sie ganz schlecht!",
+      "consciousness": "Ich bin jetzt wieder da.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 90",
+      "emotion": "verwirrt, laut",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 88",
+       "Atmung: gut",
+       "Verletzung: Kopf tut weh hinten",
+       "Zugang: Wohnungstür ist abgeschlossen, Schlüssel steckt innen"
+      ],
+      "behavior": "Schwerhörig, versteht Fragen oft erst beim zweiten Mal, antwortet laut."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "206 · Kollaps / Synkope"
+   },
+   "town": "",
+   "large": false,
+   "twist": "schwerhöriger Anrufer"
+  },
+  {
+   "id": "k-herunterspielen",
+   "draft": {
+    "title": "Will eigentlich keinen Krankenwagen",
+    "event": "Mann, 59, Brustschmerz seit einer Stunde, spielt alles herunter, Frau hat ihn zum Anruf gedrängt.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Hinterwandinfarkt",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Rolf Stegmaier",
+      "relationship": "Betroffener selbst",
+      "position": "auf dem Sofa",
+      "observations": "Meine Frau meint, ich soll anrufen. Ist bestimmt nur Sodbrennen.",
+      "consciousness": "Wach, mir ist nur ein bisschen schlecht.",
+      "timeline": "seit einer Stunde",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "abwiegelnd",
+      "delaySeconds": 0,
+      "answers": [
+       "Schmerz: drückt ein bisschen auf der Brust, geht in den Kiefer",
+       "Atmung: geht schon",
+       "Vorerkrankungen: Zucker und Blutdruck",
+       "Alter: 59"
+      ],
+      "behavior": "Spielt die Beschwerden herunter und will eigentlich niemanden belästigen; erzählt erst auf gezielte Nachfrage vom Druck auf der Brust."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Herzkatheter",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "200 · ACS / Infarkt"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Anrufer spielt Beschwerden herunter"
+  },
+  {
+   "id": "k-sprache",
+   "draft": {
+    "title": "Gebrochenes Deutsch",
+    "event": "Frau, 70, Treppe hinuntergefallen, Anruferin spricht nur wenig Deutsch.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Sturz von der Treppe, Unterarmfraktur, Kopfplatzwunde",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Olga Petrenko",
+      "relationship": "Tochter",
+      "position": "im Treppenhaus bei der Mutter",
+      "observations": "Bitte schnell, Mama fallen Treppe!",
+      "consciousness": "Mama wach, viel Schmerz.",
+      "timeline": "jetzt",
+      "unknown": [],
+      "voice": "weiblich, etwa 45",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: Mama siebzig",
+       "Verletzung: Arm kaputt, Kopf Blut wenig",
+       "Atmung: ja atmen",
+       "Stockwerk: Treppe zweite Etage"
+      ],
+      "behavior": "Spricht nur gebrochenes Deutsch, kurze Sätze; versteht einfache, langsame Fragen."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "326 · Sturz"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Anruferin spricht kaum Deutsch"
+  },
+  {
+   "id": "k-unterwegs",
+   "draft": {
+    "title": "Weiß nicht wo genau",
+    "event": "Autofahrer meldet Unfall auf Landstraße, weiß nicht genau wo er ist.",
+    "locationQuery": "Landstraße, {ort}",
+    "locationFallbackQuery": "Kreisstraße, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "leicht verletzte Fahrerin",
+    "requiredTypes": [
+     "RTW",
+     "HLF"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Michael Haas",
+      "relationship": "Zeuge, Durchreisender",
+      "position": "steht an der Unfallstelle",
+      "observations": "Hier ist ein Unfall, ein Auto liegt im Graben! Ich bin nicht von hier.",
+      "consciousness": "Die Fahrerin ist wach, sitzt im Auto.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "gestresst",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: eine Frau im Auto",
+       "Verletzung: blutet an der Hand",
+       "Ort: zwischen zwei Dörfern, gerade ein Ortsschild gesehen"
+      ],
+      "behavior": "Kennt die Gegend nicht; nennt den Ort erst, wenn nach Ortsschildern oder Wegweisern gefragt wird."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "331 · VU"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Anrufer kennt den Ort nicht"
+  },
+  {
+   "id": "k-panik-rea",
+   "draft": {
+    "title": "Baby atmet nicht",
+    "event": "Säugling, 4 Monate, im Bett leblos aufgefunden.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Säuglingsreanimation",
+    "requiredTypes": [
+     "RTW",
+     "NEF",
+     "RTH"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 1200,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Laura Merz",
+      "relationship": "Mutter",
+      "position": "im Kinderzimmer am Bett",
+      "observations": "Mein Baby atmet nicht! Bitte, bitte helfen Sie mir!",
+      "consciousness": "Er ist ganz schlaff und blau um den Mund.",
+      "timeline": "gerade gefunden",
+      "unknown": [],
+      "voice": "weiblich, etwa 28",
+      "emotion": "panisch, schreit",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: vier Monate",
+       "Atmung: ich sehe nichts",
+       "Wer ist dabei: mein Mann ist auf dem Weg"
+      ],
+      "behavior": "Völlig panisch, schreit und weint; beruhigt sich nur, wenn sie klare, kurze Anweisungen bekommt."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "212 · Kreislaufstillstand Kind"
+   },
+   "town": "",
+   "large": false,
+   "twist": "panische Anruferin, Telefonreanimation"
+  },
+  {
+   "id": "k-betrunken",
+   "draft": {
+    "title": "Betrunkener ruft wegen Kumpel an",
+    "event": "Mann ist nach einem Fest gestürzt und hat eine Platzwunde, Anrufer stark alkoholisiert.",
+    "locationQuery": "Festplatz, {ort}",
+    "locationFallbackQuery": "Sportplatz, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Kopfplatzwunde, alkoholisiert",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Dirk",
+      "relationship": "Kumpel",
+      "position": "am Festplatz",
+      "observations": "Mein Kumpel is hingeflogen, der blutet am Kopf, Alter.",
+      "consciousness": "Der redet, aber nur Quatsch.",
+      "timeline": "grad eben",
+      "unknown": [
+       "Nachname des Kumpels"
+      ],
+      "voice": "männlich, etwa 30",
+      "emotion": "lallend, gut gelaunt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: nur der Marco",
+       "Verletzung: Kopf blutet, ziemlich viel",
+       "Alkohol: wir haben alle ordentlich getankt"
+      ],
+      "behavior": "Stark angetrunken, schweift ab, macht Witze; gibt bei klaren Fragen dann doch die Infos."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "311 · Trauma sonstiges"
+   },
+   "town": "",
+   "large": false,
+   "twist": "betrunkener Anrufer"
+  },
+  {
+   "id": "k-auflegen",
+   "draft": {
+    "title": "Anrufer will gleich wieder auflegen",
+    "event": "Frau, 66, plötzliche halbseitige Lähmung; Ehemann will schnell auflegen und selbst fahren.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Schlaganfall im Lysefenster",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Neurologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herbert Schick",
+      "relationship": "Ehemann",
+      "position": "im Schlafzimmer",
+      "observations": "Meine Frau kann den Arm nicht mehr bewegen. Ich fahr sie jetzt selber ins Krankenhaus!",
+      "consciousness": "Sie ist wach, spricht verwaschen.",
+      "timeline": "seit zwanzig Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 70",
+      "emotion": "ungeduldig",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 66",
+       "Atmung: normal",
+       "Vorerkrankungen: Bluthochdruck",
+       "Zeit: beim Fernsehen um neun Uhr angefangen"
+      ],
+      "behavior": "Ungeduldig, will das Gespräch abkürzen und sie selbst fahren; lässt sich überzeugen, wenn man erklärt, warum der Rettungsdienst besser ist."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Stroke Unit",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "263 · Schlaganfall / Hirnblutung"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Anrufer will selbst fahren"
+  },
+  {
+   "id": "k-hausnotruf",
+   "draft": {
+    "title": "Hausnotruf, nur Rufen zu hören",
+    "event": "Hausnotrufzentrale meldet: Teilnehmerin, 91, hat ausgelöst, ruft nur leise um Hilfe.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Sturz in der Wohnung, unterkühlt",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Sonstige Stichworte"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Hausnotrufzentrale, Herr Kunz",
+      "relationship": "Mitarbeiter Hausnotruf",
+      "position": "in der Zentrale",
+      "observations": "Hier Hausnotrufzentrale, eine Teilnehmerin hat ausgelöst, wir hören sie nur ganz leise rufen.",
+      "consciousness": "Sie antwortet nicht verständlich.",
+      "timeline": "Auslösung vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 91",
+       "Zugang: Schlüssel im Schlüsseltresor am Eingang, Code haben wir",
+       "Vorerkrankungen: Herzschwäche"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "375 · Hilflose Person"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Meldung über Hausnotrufzentrale"
+  },
+  {
+   "id": "k-falschort",
+   "draft": {
+    "title": "Ruft aus dem falschen Ort an",
+    "event": "Radfahrerin gestürzt, Anrufer nennt erst den Nachbarort.",
+    "locationQuery": "Radweg, {ort}",
+    "locationFallbackQuery": "Feldweg, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Unterarmfraktur",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Uwe Ritter",
+      "relationship": "Radfahrer",
+      "position": "beim Radweg an der Gestürzten",
+      "observations": "Hier ist eine Radfahrerin gestürzt, der Arm sieht gebrochen aus.",
+      "consciousness": "Sie ist wach, hat Schmerzen.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Verletzung: Unterarm verformt",
+       "Anzahl Betroffene: eine Frau",
+       "Ort: am Radweg, da vorne ist ein Bauernhof"
+      ],
+      "behavior": "Nennt zuerst den falschen Nachbarort und korrigiert sich erst, wenn nach markanten Punkten gefragt wird."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "308 · Trauma Extremitäten"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Anrufer nennt erst den falschen Ort"
+  },
+  {
+   "id": "k-anruf-ohne-einsatz",
+   "draft": {
+    "title": "Frage nach Apotheke",
+    "event": "Anruferin will nur wissen, welche Apotheke Notdienst hat.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "kein Notfall",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Sonstiges"
+    ],
+    "expectedPriority": 4,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Frau Fink",
+      "relationship": "Anruferin",
+      "position": "zuhause",
+      "observations": "Entschuldigung, ich wollte nur fragen, welche Apotheke heute Notdienst hat.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "jetzt",
+      "unknown": [],
+      "voice": "weiblich, etwa 60",
+      "emotion": "höflich",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: keine",
+       "Grund: brauche Hustensaft für meinen Mann, es ist nichts Schlimmes"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "20 · Anruf ohne Einsatz"
+   },
+   "town": "",
+   "large": false,
+   "twist": "kein Notfall, Anruferin weiterleiten"
+  },
+  {
+   "id": "k-zwei-anrufer",
+   "draft": {
+    "title": "Mehrere Anrufer zum selben Unfall",
+    "event": "Auffahrunfall mit eingeklemmter Person, mehrere Zeugen rufen an.",
+    "locationQuery": "Bundesstraße, {ort}",
+    "locationFallbackQuery": "Hauptstraße, {ort}",
+    "hazards": "keine",
+    "patients": 2,
+    "patientCondition": "eingeklemmte Fahrerin mit Beckenverletzung, HWS-Distorsion",
+    "requiredTypes": [
+     "HLF",
+     "RW",
+     "RTW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Stefanie Kern",
+      "relationship": "Zeugin",
+      "position": "im eigenen Auto dahinter",
+      "observations": "Vor mir ist ein Auto auf einen Transporter aufgefahren, die Fahrerin ist eingeklemmt!",
+      "consciousness": "Sie ist wach, schreit vor Schmerzen.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 35",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: eine Frau eingeklemmt, Transporterfahrer steht",
+       "Gefahren: Unfall auf der Fahrbahn, viel Verkehr"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Herr Jung",
+      "relationship": "Transporterfahrer",
+      "position": "neben seinem Transporter",
+      "observations": "Mir ist einer hinten drauf gefahren, die Frau kommt nicht raus!",
+      "consciousness": "Mir geht es gut, nur Nacken.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "schockiert",
+      "delaySeconds": 60,
+      "answers": [],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1000,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "332 · VU, eingekl. Person"
+   },
+   "town": "",
+   "large": true,
+   "twist": "mehrere Anrufe zum selben Ereignis"
+  }
+ ]
+}

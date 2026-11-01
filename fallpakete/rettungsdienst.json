@@ -1,0 +1,1157 @@
+{
+ "id": "rettungsdienst",
+ "title": "Rettungsdienst Plus",
+ "description": "Internistische und traumatologische Notfälle von Lungenembolie bis Bus-MANV.",
+ "version": 1,
+ "author": "ILS Rems-Murr Simulation",
+ "cases": [
+  {
+   "id": "rd-lungenembolie",
+   "draft": {
+    "title": "Plötzliche Luftnot nach OP",
+    "event": "Frau, 52, vor einer Woche Knie-OP, plötzlich starke Luftnot und Herzrasen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Verdacht auf Lungenembolie",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Martina Groß",
+      "relationship": "Betroffene selbst",
+      "position": "sitzt im Wohnzimmer, Tür ist offen",
+      "observations": "Ich kriege auf einmal ganz schlecht Luft und mein Herz rast. Ich bin letzte Woche am Knie operiert worden.",
+      "consciousness": "Ich bin wach.",
+      "timeline": "seit zehn Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 50",
+      "emotion": "ängstlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 52",
+       "Atmung: ganz schnell, Stiche beim Einatmen",
+       "Vorerkrankungen: Knie-OP vor einer Woche, Thrombosespritze vergessen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "207 · Lungenembolie"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-hypertonie",
+   "draft": {
+    "title": "Blutdruck über 220",
+    "event": "Frau, 71, Kopfschmerzen und Übelkeit, Blutdruckgerät zeigt 230 zu 120.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "hypertensive Entgleisung ohne neurologische Ausfälle",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Hans Keller",
+      "relationship": "Ehemann",
+      "position": "bei ihr in der Küche",
+      "observations": "Meine Frau hat furchtbare Kopfschmerzen und ihr ist schlecht. Das Blutdruckgerät zeigt 230 zu 120.",
+      "consciousness": "Sie ist wach und redet normal.",
+      "timeline": "seit einer Stunde",
+      "unknown": [],
+      "voice": "männlich, etwa 75",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 71",
+       "Atmung: normal",
+       "Vorerkrankungen: Bluthochdruck, Tabletten heute vergessen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "203 · Hypertensive Entgleisung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-rhythmus",
+   "draft": {
+    "title": "Herzrasen und Schwindel",
+    "event": "Mann, 60, Herzrasen seit einer Stunde, Schwindel, Puls über 180.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Tachyarrhythmie, kreislaufstabil",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Ute Heinz",
+      "relationship": "Kollegin",
+      "position": "im Büro bei ihm im Erdgeschoss",
+      "observations": "Mein Kollege hat Herzrasen und ihm ist total schwindelig. Die Uhr zeigt Puls 185.",
+      "consciousness": "Er ist wach, sitzt auf dem Stuhl und ist blass.",
+      "timeline": "seit einer Stunde",
+      "unknown": [],
+      "voice": "weiblich, etwa 45",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 60",
+       "Atmung: etwas schneller",
+       "Vorerkrankungen: Vorhofflimmern bekannt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kardiologie",
+    "locationKind": "objekt",
+    "objectType": "Gewerbegebiet",
+    "keyword": "209 · Rhythmusstörung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-bewusstlos",
+   "draft": {
+    "title": "Mann reagiert nicht",
+    "event": "Mann, 55, liegt im Garten, reagiert nicht auf Ansprache, atmet.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Bewusstlosigkeit, Hypoglykämie",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Neurologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Karin Lutz",
+      "relationship": "Nachbarin",
+      "position": "über den Gartenzaun, geht jetzt zu ihm",
+      "observations": "Mein Nachbar liegt im Garten auf dem Rasen und reagiert nicht, wenn ich rufe.",
+      "consciousness": "Er reagiert nicht, die Augen sind zu.",
+      "timeline": "habe ihn gerade gefunden",
+      "unknown": [],
+      "voice": "weiblich, etwa 60",
+      "emotion": "schockiert",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: etwa 55",
+       "Atmung: ja, er atmet, schnarcht etwas",
+       "Verletzung: sehe nichts",
+       "Vorerkrankungen: er ist Diabetiker, glaube ich"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 540,
+      "description": "Die Atmung wird immer langsamer",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "260 · Bewußtlosigkeit"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-gi-blutung",
+   "draft": {
+    "title": "Erbricht Blut",
+    "event": "Mann, 66, erbricht schwallartig Blut, kaltschweißig.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "obere GI-Blutung, Schockzeichen",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Abdomen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Doris Brenner",
+      "relationship": "Ehefrau",
+      "position": "im Bad bei ihm",
+      "observations": "Mein Mann bricht Blut! Ganz viel, dunkelrot.",
+      "consciousness": "Er ist wach aber total blass und schwitzt.",
+      "timeline": "vor fünf Minuten das erste Mal",
+      "unknown": [],
+      "voice": "weiblich, etwa 65",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 66",
+       "Vorerkrankungen: Leberzirrhose, trinkt viel",
+       "Blutung: zweimal erbrochen, Schüssel halb voll"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Gastroenterologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "252 · GI-Blutung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-kolik",
+   "draft": {
+    "title": "Nierenkolik",
+    "event": "Mann, 38, krümmt sich vor Schmerzen in der rechten Flanke.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Nierenkolik",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Abdomen"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Jonas Pfeiffer",
+      "relationship": "Betroffener selbst",
+      "position": "liegt auf dem Sofa, Wohnung im ersten Stock",
+      "observations": "Ich habe wahnsinnige Schmerzen in der rechten Seite, das kommt in Wellen.",
+      "consciousness": "Ich bin wach.",
+      "timeline": "seit zwei Stunden",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "gequält",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 38",
+       "Schmerz: rechte Flanke, zieht in die Leiste",
+       "Vorerkrankungen: hatte schon mal Nierensteine"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Urologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "253 · Kolik"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-sht-leiter",
+   "draft": {
+    "title": "Von der Leiter gestürzt",
+    "event": "Mann, 62, beim Obstpflücken etwa drei Meter von der Leiter gefallen, auf den Kopf.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Schädel-Hirn-Trauma, Verdacht auf Schädelbasisfraktur",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Anke Roth",
+      "relationship": "Ehefrau",
+      "position": "im Garten bei ihm",
+      "observations": "Mein Mann ist von der Leiter gefallen, mit dem Kopf zuerst! Er blutet aus dem Ohr.",
+      "consciousness": "Er ist wach, aber ganz verwirrt und fragt immer dasselbe.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 60",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 62",
+       "Höhe: bestimmt drei Meter",
+       "Atmung: atmet",
+       "Verletzung: Blut aus dem rechten Ohr, Beule am Kopf"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Neurochirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "307 · SHT"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-schlaegerei",
+   "draft": {
+    "title": "Schlägerei vor Kneipe",
+    "event": "Vor einer Gaststätte Schlägerei, ein Mann liegt am Boden und blutet im Gesicht.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Gesichtsverletzungen, Nasenbeinfraktur",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Berisha",
+      "relationship": "Wirt",
+      "position": "an der Eingangstür der Gaststätte",
+      "observations": "Vor meiner Kneipe haben sich welche geprügelt, einer liegt jetzt am Boden und blutet im Gesicht.",
+      "consciousness": "Er ist wach, sitzt jetzt auf.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "gereizt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: einer verletzt, die anderen sind weggelaufen",
+       "Verletzung: Nase blutet, Auge zugeschwollen",
+       "Gefahren: die anderen sind weg"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "objekt",
+    "objectType": "Gaststätte",
+    "keyword": "305 · Schlägerei"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-stich",
+   "draft": {
+    "title": "Messer in der Küche abgerutscht",
+    "event": "Frau, 33, mit dem Küchenmesser in den Oberschenkel geschnitten, blutet stark.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Stichverletzung Oberschenkel, starke Blutung",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Kevin Lorenz",
+      "relationship": "Mitbewohner",
+      "position": "in der Küche bei ihr",
+      "observations": "Meine Mitbewohnerin hat sich das Messer in den Oberschenkel gerammt, es blutet total!",
+      "consciousness": "Sie ist wach, aber ganz weiß im Gesicht.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 25",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 33",
+       "Blutung: spritzt ein bisschen, Handtuch ist durch",
+       "Schon getan: Handtuch drauf gedrückt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "303 · Hieb-/Stichverletzung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-verbruehung",
+   "draft": {
+    "title": "Kind mit heißem Tee verbrüht",
+    "event": "Kind, 3 Jahre, hat sich eine Kanne heißen Tee über Brust und Arm gezogen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Verbrühung ca. 10 Prozent KOF",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Nina Hartmann",
+      "relationship": "Mutter",
+      "position": "im Bad, kühlt das Kind",
+      "observations": "Mein Sohn hat sich heißen Tee über die Brust gekippt! Die Haut ist ganz rot und macht Blasen.",
+      "consciousness": "Er schreit, ist wach.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 30",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: drei Jahre",
+       "Verletzung: Brust und rechter Arm, Blasen",
+       "Schon getan: unter lauwarmes Wasser gehalten"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "313 · Verbrennung/Verbrühung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-sport",
+   "draft": {
+    "title": "Fußballer mit Knieverletzung",
+    "event": "Fußballspieler, 22, beim Spiel umgeknickt, Knie stark geschwollen.",
+    "locationQuery": "Sportplatz, {ort}",
+    "locationFallbackQuery": "Stadion, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Knieverletzung, Verdacht auf Bandruptur",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Trainer Weiß",
+      "relationship": "Trainer",
+      "position": "auf dem Spielfeld beim Spieler",
+      "observations": "Bei uns auf dem Sportplatz hat sich ein Spieler am Knie verletzt, er kann nicht mehr auftreten.",
+      "consciousness": "Er ist wach, hat große Schmerzen.",
+      "timeline": "vor zehn Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 22",
+       "Verletzung: rechtes Knie, dick geschwollen",
+       "Zugang: Einfahrt am Vereinsheim, Tor ist offen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "324 · Sport-/Schulunfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-ertrinken",
+   "draft": {
+    "title": "Kind im Hallenbad untergegangen",
+    "event": "Kind, 8, im Hallenbad untergegangen, vom Bademeister herausgezogen, hustet.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Beinahe-Ertrinken, Aspiration",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Kraus",
+      "relationship": "Bademeister",
+      "position": "am Beckenrand beim Kind",
+      "observations": "Hier ist ein Junge untergegangen, ich habe ihn rausgeholt. Er hustet jetzt viel Wasser.",
+      "consciousness": "Er ist wach und weint.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "konzentriert",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: acht",
+       "Atmung: hustet, atmet schnell",
+       "Zeit unter Wasser: vielleicht eine halbe Minute"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "objekt",
+    "objectType": "Hallenbad",
+    "keyword": "320 · Bade-/Tauch-/Ertrinkungsunfall Ertrinkungsunfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-hitze",
+   "draft": {
+    "title": "Bauarbeiter kollabiert in der Hitze",
+    "event": "Bauarbeiter, 45, bei großer Hitze auf Baustelle zusammengebrochen, verwirrt.",
+    "locationQuery": "Baustelle, {ort}",
+    "locationFallbackQuery": "Gewerbegebiet, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Hitzschlag",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Thermische Schäden"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Polier Schuler",
+      "relationship": "Polier",
+      "position": "auf der Baustelle im Schatten bei ihm",
+      "observations": "Ein Kollege ist bei der Hitze umgekippt. Jetzt redet er wirres Zeug.",
+      "consciousness": "Er ist wach, aber verwirrt und glüht.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 45",
+       "Atmung: schnell",
+       "Schon getan: in den Schatten gelegt, Wasser gegeben"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "340 · Hitzschlag / Sonnenstich"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-unterkuehlung",
+   "draft": {
+    "title": "Obdachloser stark unterkühlt",
+    "event": "Mann liegt nachts auf Parkbank, kaum ansprechbar, eiskalt.",
+    "locationQuery": "Park, {ort}",
+    "locationFallbackQuery": "Stadtpark, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Hypothermie, somnolent",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Thermische Schäden"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Svenja Busch",
+      "relationship": "Passantin",
+      "position": "steht bei ihm im Park",
+      "observations": "Hier liegt ein Mann auf einer Bank im Park, er ist eiskalt und redet kaum.",
+      "consciousness": "Er murmelt nur, die Augen sind halb zu.",
+      "timeline": "weiß ich nicht, ich habe ihn gerade gefunden",
+      "unknown": [
+       "wie lange er schon da liegt"
+      ],
+      "voice": "weiblich, etwa 30",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: vielleicht 60",
+       "Atmung: atmet langsam",
+       "Kleidung: nur eine dünne Jacke"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "341 · Unterkühlung / Erfrierung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-psych",
+   "draft": {
+    "title": "Sohn völlig außer sich",
+    "event": "Mann, 28, in akuter Psychose, schreit, fühlt sich verfolgt, keine Waffen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "akute Psychose",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Psychiatrie"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Brigitte Wolf",
+      "relationship": "Mutter",
+      "position": "im Hausflur, Sohn ist im Zimmer",
+      "observations": "Mein Sohn ist völlig außer sich, er sagt, jemand will ihn umbringen, und schreit die ganze Zeit.",
+      "consciousness": "Er ist wach, aber nicht ansprechbar für mich.",
+      "timeline": "seit heute Nachmittag",
+      "unknown": [],
+      "voice": "weiblich, etwa 55",
+      "emotion": "verzweifelt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 28",
+       "Vorerkrankungen: Schizophrenie, setzt Tabletten ab",
+       "Gefahren: keine Waffen, aber er wirft Sachen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Psychiatrie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "270 · Psychiatrischer Notfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-ktp-einweisung",
+   "draft": {
+    "title": "Einweisung Hausarzt",
+    "event": "Hausarzt weist Patientin, 82, mit Lungenentzündung ins Krankenhaus ein.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Pneumonie, stabil",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Sonstige Stichworte"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Dr. Albrecht",
+      "relationship": "Hausarzt",
+      "position": "in der Praxis am Telefon",
+      "observations": "Hier Praxis Albrecht, ich brauche einen Transport für eine Patientin mit Lungenentzündung ins Krankenhaus.",
+      "consciousness": "Die Patientin ist wach und orientiert.",
+      "timeline": "heute",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 82",
+       "Atmung: Sauerstoffsättigung 90 Prozent",
+       "Zugang: zweiter Stock ohne Aufzug, muss getragen werden"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "372 · Einweisung RTW"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-manv-bus",
+   "draft": {
+    "title": "Linienbus macht Vollbremsung",
+    "event": "Linienbus muss stark bremsen, mehrere Fahrgäste gestürzt und verletzt.",
+    "locationQuery": "Bahnhofstraße, {ort}",
+    "locationFallbackQuery": "Hauptstraße, {ort}",
+    "hazards": "keine",
+    "patients": 7,
+    "patientCondition": "sieben Leichtverletzte, eine Schenkelhalsfraktur",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "MANV"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Busfahrer Kemal",
+      "relationship": "Busfahrer",
+      "position": "im Bus bei den Fahrgästen",
+      "observations": "Ich musste mit dem Bus voll bremsen, jetzt sind mehrere Fahrgäste gestürzt, einige bluten.",
+      "consciousness": "Die meisten sind wach, eine ältere Dame liegt am Boden.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "gestresst",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: sieben, acht Verletzte",
+       "Verletzung: Platzwunden, eine Frau hat Schmerzen an der Hüfte",
+       "Gefahren: Bus steht auf der Fahrbahn"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Nicole Frey",
+      "relationship": "Fahrgast",
+      "position": "im Bus",
+      "observations": "Ich sitze im Bus, eine alte Frau liegt hier und kommt nicht hoch.",
+      "consciousness": "Sie ist wach.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 35",
+      "emotion": "aufgeregt",
+      "delaySeconds": 90,
+      "answers": [],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "1 · MANV 1 (5-10 Verletzte)"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "rd-amputation",
+   "draft": {
+    "title": "Finger im Rasenmäher",
+    "event": "Mann, 50, mit der Hand in den Rasenmäher geraten, zwei Finger abgetrennt.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "traumatische Fingeramputation",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Silke Ebert",
+      "relationship": "Ehefrau",
+      "position": "im Garten bei ihm",
+      "observations": "Mein Mann ist mit der Hand in den Rasenmäher gekommen, zwei Finger sind ab!",
+      "consciousness": "Er ist wach, steht unter Schock.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 50",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 50",
+       "Blutung: blutet stark",
+       "Schon getan: Geschirrtuch drum",
+       "Finger: liegen noch im Gras"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Handchirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "300 · Amputation"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-hyperventilation",
+   "draft": {
+    "title": "Panikattacke",
+    "event": "Frau, 24, nach Streit schnelle Atmung, Kribbeln in den Händen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Hyperventilation",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Atmung"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Marie Schulz",
+      "relationship": "Freundin",
+      "position": "bei ihr im Zimmer",
+      "observations": "Meine Freundin atmet ganz schnell und sagt, ihre Hände kribbeln und werden steif.",
+      "consciousness": "Sie ist wach und weint.",
+      "timeline": "seit zehn Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 25",
+      "emotion": "unsicher",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 24",
+       "Atmung: ganz schnell",
+       "Vorerkrankungen: keine",
+       "Auslöser: Streit mit ihrem Freund"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "225 · Hyperventilation"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rd-ws-trauma",
+   "draft": {
+    "title": "Sprung ins flache Wasser",
+    "event": "Mann, 19, Kopfsprung in flaches Wasser am Baggersee, Nacken schmerzt, Arme kribbeln.",
+    "locationQuery": "Baggersee, {ort}",
+    "locationFallbackQuery": "See, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Verdacht auf HWS-Verletzung mit Sensibilitätsstörung",
+    "requiredTypes": [
+     "RTW",
+     "NEF",
+     "RTH"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Leon Graf",
+      "relationship": "Freund",
+      "position": "am Ufer bei ihm",
+      "observations": "Mein Kumpel ist kopfüber ins flache Wasser gesprungen, jetzt tut ihm der Nacken weh und die Arme kribbeln.",
+      "consciousness": "Er ist wach und redet.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 20",
+      "emotion": "ängstlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 19",
+       "Gefühl: Arme kribbeln, Beine spürt er",
+       "Schon getan: wir haben ihn rausgezogen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "314 · WS-Trauma"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  }
+ ]
+}

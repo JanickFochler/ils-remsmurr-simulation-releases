@@ -1,0 +1,35 @@
+{
+ "format": 1,
+ "packs": [
+  {
+   "id": "rettungsdienst",
+   "title": "Rettungsdienst Plus",
+   "description": "Internistische und traumatologische Notfälle von Lungenembolie bis Bus-MANV.",
+   "version": 1,
+   "cases": 20,
+   "file": "rettungsdienst.json",
+   "sha256": "50AB30614518C99CA2AE14FE82B662BA327FB826D4DB13B061113F8231B28F45",
+   "size": 31957
+  },
+  {
+   "id": "feuerwehr",
+   "title": "Feuerwehr & Technische Hilfe",
+   "description": "Brände, eingeklemmte Personen, Gefahrgut und Hilfeleistungen.",
+   "version": 1,
+   "cases": 17,
+   "file": "feuerwehr.json",
+   "sha256": "CDAE9BC13936FDF702E94AE68B47B9F413FEB2ABA7E3B8406DDB579D17E7421B",
+   "size": 27231
+  },
+  {
+   "id": "knifflig",
+   "title": "Knifflige Anrufe",
+   "description": "Kinder, Panik, Sprachbarrieren, Herunterspielen, falsche Ortsangaben – Gesprächsführung üben.",
+   "version": 1,
+   "cases": 12,
+   "file": "knifflig.json",
+   "sha256": "28B29D60A8E819EC6352125D966CA9D492C12350C72F2E66A32C89521921D0B5",
+   "size": 20616
+  }
+ ]
+}
