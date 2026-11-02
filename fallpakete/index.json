@@ -9,7 +9,118 @@
    "cases": 20,
    "file": "rettungsdienst.json",
    "sha256": "50AB30614518C99CA2AE14FE82B662BA327FB826D4DB13B061113F8231B28F45",
-   "size": 31957
+   "size": 31957,
+   "author": "ILS Rems-Murr Simulation",
+   "category": "Rettungsdienst",
+   "tags": [
+    "Internistisch",
+    "Trauma",
+    "MANV"
+   ],
+   "updated": "2026-10-31",
+   "changes": "",
+   "contents": [
+    {
+     "title": "Plötzliche Luftnot nach OP",
+     "keyword": "207 · Lungenembolie",
+     "large": false
+    },
+    {
+     "title": "Blutdruck über 220",
+     "keyword": "203 · Hypertensive Entgleisung",
+     "large": false
+    },
+    {
+     "title": "Herzrasen und Schwindel",
+     "keyword": "209 · Rhythmusstörung",
+     "large": false
+    },
+    {
+     "title": "Mann reagiert nicht",
+     "keyword": "260 · Bewußtlosigkeit",
+     "large": false
+    },
+    {
+     "title": "Erbricht Blut",
+     "keyword": "252 · GI-Blutung",
+     "large": false
+    },
+    {
+     "title": "Nierenkolik",
+     "keyword": "253 · Kolik",
+     "large": false
+    },
+    {
+     "title": "Von der Leiter gestürzt",
+     "keyword": "307 · SHT",
+     "large": false
+    },
+    {
+     "title": "Schlägerei vor Kneipe",
+     "keyword": "305 · Schlägerei",
+     "large": false
+    },
+    {
+     "title": "Messer in der Küche abgerutscht",
+     "keyword": "303 · Hieb-/Stichverletzung",
+     "large": false
+    },
+    {
+     "title": "Kind mit heißem Tee verbrüht",
+     "keyword": "313 · Verbrennung/Verbrühung",
+     "large": false
+    },
+    {
+     "title": "Fußballer mit Knieverletzung",
+     "keyword": "324 · Sport-/Schulunfall",
+     "large": false
+    },
+    {
+     "title": "Kind im Hallenbad untergegangen",
+     "keyword": "320 · Bade-/Tauch-/Ertrinkungsunfall Ertrinkungsunfall",
+     "large": false
+    },
+    {
+     "title": "Bauarbeiter kollabiert in der Hitze",
+     "keyword": "340 · Hitzschlag / Sonnenstich",
+     "large": false
+    },
+    {
+     "title": "Obdachloser stark unterkühlt",
+     "keyword": "341 · Unterkühlung / Erfrierung",
+     "large": false
+    },
+    {
+     "title": "Sohn völlig außer sich",
+     "keyword": "270 · Psychiatrischer Notfall",
+     "large": false
+    },
+    {
+     "title": "Einweisung Hausarzt",
+     "keyword": "372 · Einweisung RTW",
+     "large": false
+    },
+    {
+     "title": "Linienbus macht Vollbremsung",
+     "keyword": "1 · MANV 1 (5-10 Verletzte)",
+     "large": true
+    },
+    {
+     "title": "Finger im Rasenmäher",
+     "keyword": "300 · Amputation",
+     "large": false
+    },
+    {
+     "title": "Panikattacke",
+     "keyword": "225 · Hyperventilation",
+     "large": false
+    },
+    {
+     "title": "Sprung ins flache Wasser",
+     "keyword": "314 · WS-Trauma",
+     "large": false
+    }
+   ]
   },
   {
    "id": "feuerwehr",
@@ -19,7 +130,103 @@
    "cases": 17,
    "file": "feuerwehr.json",
    "sha256": "CDAE9BC13936FDF702E94AE68B47B9F413FEB2ABA7E3B8406DDB579D17E7421B",
-   "size": 27231
+   "size": 27231,
+   "author": "ILS Rems-Murr Simulation",
+   "category": "Feuerwehr",
+   "tags": [
+    "Brand",
+    "Technische Hilfe",
+    "Gefahrgut"
+   ],
+   "updated": "2026-10-31",
+   "changes": "",
+   "contents": [
+    {
+     "title": "Flammen aus dem Dach",
+     "keyword": "B4 · Dachstuhlbrand",
+     "large": false
+    },
+    {
+     "title": "Brand im Mehrfamilienhaus, Personen am Fenster",
+     "keyword": "B5 · Gebäudebrand MFH",
+     "large": true
+    },
+    {
+     "title": "Böschung brennt",
+     "keyword": "B1 · Flächenbrand (bis 100m²)",
+     "large": false
+    },
+    {
+     "title": "Altpapiercontainer brennt",
+     "keyword": "B1 · Containerbrand klein (z.B. Altpapier)",
+     "large": false
+    },
+    {
+     "title": "Funken aus dem Kamin",
+     "keyword": "B2 · Schornsteinbrand",
+     "large": false
+    },
+    {
+     "title": "Rauch aus Lagerhalle",
+     "keyword": "B4 · Brand Gewerbebetrieb",
+     "large": false
+    },
+    {
+     "title": "PKW überschlagen",
+     "keyword": "H3 · Person eingeklemmt (PKW)",
+     "large": false
+    },
+    {
+     "title": "LKW-Fahrer eingeklemmt",
+     "keyword": "H4 · Person eingeklemmt (LKW)",
+     "large": false
+    },
+    {
+     "title": "Person in der Rems",
+     "keyword": "H2 · Person in Wasser/Eis",
+     "large": false
+    },
+    {
+     "title": "Arbeiter in Schacht gestürzt",
+     "keyword": "H2 · Person abgestürzt",
+     "large": false
+    },
+    {
+     "title": "Bagger beschädigt Gasleitung",
+     "keyword": "H3 · Gasaustritt (bestätigt)",
+     "large": false
+    },
+    {
+     "title": "Tanklastzug leckt",
+     "keyword": "G2 · Öl/Benzin läuft aus groß",
+     "large": false
+    },
+    {
+     "title": "Wespennest am Kindergarten",
+     "keyword": "H0 · Insekten",
+     "large": false
+    },
+    {
+     "title": "Tragehilfe für den Rettungsdienst",
+     "keyword": "H1 · Tragehilfe (ohne DLK)",
+     "large": false
+    },
+    {
+     "title": "Ausleuchten für Polizeisuche",
+     "keyword": "H1 · Ausleuchten",
+     "large": false
+    },
+    {
+     "title": "Rauch im Pflegeheim",
+     "keyword": "B5 · Brand Alten- und Pflegeheim",
+     "large": true
+    },
+    {
+     "title": "Rauch über dem Wald",
+     "keyword": "B2 · Waldbrand",
+     "large": false
+    }
+   ]
   },
   {
    "id": "knifflig",
@@ -29,7 +236,79 @@
    "cases": 12,
    "file": "knifflig.json",
    "sha256": "28B29D60A8E819EC6352125D966CA9D492C12350C72F2E66A32C89521921D0B5",
-   "size": 20616
+   "size": 20616,
+   "author": "ILS Rems-Murr Simulation",
+   "category": "Gesprächsführung",
+   "tags": [
+    "Kinder",
+    "Panik",
+    "Sprachbarriere",
+    "Ortsangabe"
+   ],
+   "updated": "2026-10-31",
+   "changes": "",
+   "contents": [
+    {
+     "title": "Kind ruft an: Oma wacht nicht auf",
+     "keyword": "260 · Bewußtlosigkeit",
+     "large": false
+    },
+    {
+     "title": "Schwerhöriger Rentner",
+     "keyword": "206 · Kollaps / Synkope",
+     "large": false
+    },
+    {
+     "title": "Will eigentlich keinen Krankenwagen",
+     "keyword": "200 · ACS / Infarkt",
+     "large": false
+    },
+    {
+     "title": "Gebrochenes Deutsch",
+     "keyword": "326 · Sturz",
+     "large": false
+    },
+    {
+     "title": "Weiß nicht wo genau",
+     "keyword": "331 · VU",
+     "large": false
+    },
+    {
+     "title": "Baby atmet nicht",
+     "keyword": "212 · Kreislaufstillstand Kind",
+     "large": false
+    },
+    {
+     "title": "Betrunkener ruft wegen Kumpel an",
+     "keyword": "311 · Trauma sonstiges",
+     "large": false
+    },
+    {
+     "title": "Anrufer will gleich wieder auflegen",
+     "keyword": "263 · Schlaganfall / Hirnblutung",
+     "large": false
+    },
+    {
+     "title": "Hausnotruf, nur Rufen zu hören",
+     "keyword": "375 · Hilflose Person",
+     "large": false
+    },
+    {
+     "title": "Ruft aus dem falschen Ort an",
+     "keyword": "308 · Trauma Extremitäten",
+     "large": false
+    },
+    {
+     "title": "Frage nach Apotheke",
+     "keyword": "20 · Anruf ohne Einsatz",
+     "large": false
+    },
+    {
+     "title": "Mehrere Anrufer zum selben Unfall",
+     "keyword": "332 · VU, eingekl. Person",
+     "large": true
+    }
+   ]
   },
   {
    "id": "rd-spezial",
@@ -39,7 +318,144 @@
    "cases": 25,
    "file": "rd-spezial.json",
    "sha256": "4178A2A0142D23CB05C80A941AB0FD936CDEB8D5DDAEE2E7BEC6CF17670D0131",
-   "size": 44860
+   "size": 44860,
+   "author": "ILS Rems-Murr Simulation",
+   "category": "Rettungsdienst",
+   "tags": [
+    "Kinder",
+    "Schwangerschaft",
+    "Vergiftung",
+    "Selten"
+   ],
+   "updated": "2026-10-31",
+   "changes": "",
+   "contents": [
+    {
+     "title": "Kleinkind bellt und pfeift",
+     "keyword": "223 · Krupp-Anfall",
+     "large": false
+    },
+    {
+     "title": "Fieber, Nackensteife, Flecken",
+     "keyword": "262 · Neurologischer Notfall",
+     "large": false
+    },
+    {
+     "title": "Erdnuss auf dem Kindergeburtstag",
+     "keyword": "373 · Anaphylaxie",
+     "large": false
+    },
+    {
+     "title": "Kleinkind hat Omas Tabletten gegessen",
+     "keyword": "243 · Intoxikation Medikamente",
+     "large": false
+    },
+    {
+     "title": "Schwangere blutet stark",
+     "keyword": "360 · Blutung vaginal",
+     "large": false
+    },
+    {
+     "title": "Geburt auf dem Parkplatz",
+     "keyword": "361 · Geburt",
+     "large": false
+    },
+    {
+     "title": "Reißender Schmerz im Rücken",
+     "keyword": "201 · Akuter Thoraxschmerz",
+     "large": false
+    },
+    {
+     "title": "Brodeln beim Atmen",
+     "keyword": "208 · Lungenödem kardial",
+     "large": false
+    },
+    {
+     "title": "Ganze Familie hat Kopfweh",
+     "keyword": "242 · Intoxikation Inhalativ",
+     "large": false
+    },
+    {
+     "title": "Elektriker bekommt Schlag",
+     "keyword": "325 · Stromunfall",
+     "large": false
+    },
+    {
+     "title": "Rohrreiniger ins Gesicht",
+     "keyword": "312 · Verätzung",
+     "large": false
+    },
+    {
+     "title": "Treiber bei der Jagd getroffen",
+     "keyword": "306 · Schussverletzung",
+     "large": false
+    },
+    {
+     "title": "Krampfanfall hört nicht auf",
+     "keyword": "261 · Krampfanfall",
+     "large": false
+    },
+    {
+     "title": "Abschiedsnachricht gefunden",
+     "keyword": "271 · Suizid / Suizidversuch",
+     "large": false
+    },
+    {
+     "title": "Überhitzt nach Partydrogen",
+     "keyword": "241 · Intoxikation Drogen",
+     "large": false
+    },
+    {
+     "title": "Bewohnerin aus dem Bett gefallen",
+     "keyword": "304 · Schenkelhalsfraktur",
+     "large": false
+    },
+    {
+     "title": "Nach der Dialyse umgekippt",
+     "keyword": "204 · Hypotonie",
+     "large": false
+    },
+    {
+     "title": "Opa hustet und ist verwirrt",
+     "keyword": "224 · Bronchitis / Pneumonie",
+     "large": false
+    },
+    {
+     "title": "Katheter verstopft",
+     "keyword": "280 · Katheterwechsel",
+     "large": false
+    },
+    {
+     "title": "Kind spuckt Blut nach Mandel-OP",
+     "keyword": "351 · Nachblutung HNO-OP",
+     "large": false
+    },
+    {
+     "title": "Metallsplitter im Auge",
+     "keyword": "301 · Augenverletzung",
+     "large": false
+    },
+    {
+     "title": "Bein plötzlich kalt und weiß",
+     "keyword": "202 · Gefäßverschluss",
+     "large": false
+    },
+    {
+     "title": "Starke Unterbauchschmerzen, kollabiert",
+     "keyword": "362 · Gynäkologischer Notfall",
+     "large": false
+    },
+    {
+     "title": "Zusammenbruch beim Badminton",
+     "keyword": "211 · Kreislaufstillstand mit T-CPR",
+     "large": false
+    },
+    {
+     "title": "Jugendliche mit Diabetes erbricht",
+     "keyword": "231 · Stoffwechsel sonstige",
+     "large": false
+    }
+   ]
   },
   {
    "id": "brand",
@@ -49,7 +465,143 @@
    "cases": 25,
    "file": "brand.json",
    "sha256": "AFD80FD72FC5173BE86AF4FE9DA12D21D4A0BAA66D1686BFD8D14A37AFADB744",
-   "size": 47023
+   "size": 47023,
+   "author": "ILS Rems-Murr Simulation",
+   "category": "Feuerwehr",
+   "tags": [
+    "Brand",
+    "Gefahrgut",
+    "Akku"
+   ],
+   "updated": "2026-10-31",
+   "changes": "",
+   "contents": [
+    {
+     "title": "Auto brennt in Tiefgarage",
+     "keyword": "B5 · Tiefgaragenbrand",
+     "large": true
+    },
+    {
+     "title": "Rauch im Hotelflur",
+     "keyword": "B5 · Brand Beherbergungsstätte",
+     "large": true
+    },
+    {
+     "title": "Bühnenbrand beim Konzert",
+     "keyword": "B5 · Brand Versammlungsstätte",
+     "large": true
+    },
+    {
+     "title": "Scheune mit Heu brennt",
+     "keyword": "B4 · Landwirtschafliches Anwesen",
+     "large": false
+    },
+    {
+     "title": "Mann noch im brennenden Haus",
+     "keyword": "B4 · Gebäudebrand EFH",
+     "large": false
+    },
+    {
+     "title": "Rauch aus der Wohnung der Nachbarin",
+     "keyword": "B3 · Wohnungsbrand",
+     "large": false
+    },
+    {
+     "title": "E-Bike-Akku explodiert",
+     "keyword": "B3 · Zimmerbrand",
+     "large": false
+    },
+    {
+     "title": "Lastwagen brennt am Parkplatz",
+     "keyword": "B2 · LKW / Bus Brand",
+     "large": false
+    },
+    {
+     "title": "Schulbus raucht",
+     "keyword": "B2 · LKW / Bus Brand",
+     "large": false
+    },
+    {
+     "title": "Auto brennt auf der Landstraße",
+     "keyword": "B2 · PKW Brand außerhalb Ort/Bundesstraße",
+     "large": false
+    },
+    {
+     "title": "Gartenhütte brennt, Gasflasche drin",
+     "keyword": "B2 · Schuppenbrand",
+     "large": false
+    },
+    {
+     "title": "Ölofen verpufft in der Werkstatt",
+     "keyword": "B2 · Ölofenbrand",
+     "large": false
+    },
+    {
+     "title": "Container brennt am Gerüst",
+     "keyword": "B2 · Containerbrand groß",
+     "large": false
+    },
+    {
+     "title": "Getreidefeld brennt beim Dreschen",
+     "keyword": "B2 · Flächenbrand groß (ab 100 m2)",
+     "large": false
+    },
+    {
+     "title": "Rauch aus leerer Fabrik",
+     "keyword": "B2 · Rauchentwicklung (verdächtiger Rauch)",
+     "large": false
+    },
+    {
+     "title": "Brandmeldeanlage Lackiererei",
+     "keyword": "B3 · Brandmeldeanlage 3",
+     "large": false
+    },
+    {
+     "title": "Rauchmelder piept seit zwanzig Minuten",
+     "keyword": "B1 · Warnmelder (z.B. RWM) ohne konkrete Gefahr",
+     "large": false
+    },
+    {
+     "title": "Mülleimer an der Haltestelle brennt",
+     "keyword": "B1 · Kleinbrand im Freien (Papierkorb)",
+     "large": false
+    },
+    {
+     "title": "Brandgeruch im Klassenzimmer",
+     "keyword": "B0 · Erkundung Brand",
+     "large": false
+    },
+    {
+     "title": "Es qualmt wieder",
+     "keyword": "B0 · Brandnachschau",
+     "large": false
+    },
+    {
+     "title": "Keller brennt, Bewohner auf den Balkonen",
+     "keyword": "B4 · Kellerbrand",
+     "large": true
+    },
+    {
+     "title": "Brand im Gartenlager mit Poolchemie",
+     "keyword": "412 · Brand, gefährliche Güter",
+     "large": false
+    },
+    {
+     "title": "Späneabsaugung brennt",
+     "keyword": "B4 · Brand Gewerbebetrieb",
+     "large": false
+    },
+    {
+     "title": "Solaranlage auf dem Dach brennt",
+     "keyword": "B4 · Dachstuhlbrand",
+     "large": false
+    },
+    {
+     "title": "Abzugshaube im Restaurant brennt",
+     "keyword": "B3 · Küchenbrand",
+     "large": false
+    }
+   ]
   },
   {
    "id": "technik",
@@ -59,7 +611,143 @@
    "cases": 25,
    "file": "technik.json",
    "sha256": "3456BD2221AE712752D30E74FDEB0C086FF360BFEA8CF9531A756DD7D5C6AA8C",
-   "size": 48693
+   "size": 48693,
+   "author": "ILS Rems-Murr Simulation",
+   "category": "Feuerwehr",
+   "tags": [
+    "Technische Hilfe",
+    "Höhenrettung",
+    "Gefahrgut"
+   ],
+   "updated": "2026-10-31",
+   "changes": "",
+   "contents": [
+    {
+     "title": "Person sitzt auf dem Parkhausdach",
+     "keyword": "H2 · Person will springen",
+     "large": false
+    },
+    {
+     "title": "Patient passt nicht durchs Treppenhaus",
+     "keyword": "H2 · DL zur Menschenrettung",
+     "large": false
+    },
+    {
+     "title": "Arm im Förderband",
+     "keyword": "H3 · Person eingeklemmt",
+     "large": false
+    },
+    {
+     "title": "Automatischer Notruf aus einem Auto",
+     "keyword": "H3 · E-Call (bei automatischer Unfallmeldung)",
+     "large": false
+    },
+    {
+     "title": "Ballon hart gelandet",
+     "keyword": "H3 · Unfall Luftfahrzeug (Kleinflugzeug, Ballon)",
+     "large": true
+    },
+    {
+     "title": "Explosion im Reihenhaus",
+     "keyword": "H4 · Einsturz / Explosion",
+     "large": true
+    },
+    {
+     "title": "Person unter der S-Bahn",
+     "keyword": "H4 · Person unter Schienenfahrzeug",
+     "large": false
+    },
+    {
+     "title": "Arbeiter im Graben verschüttet",
+     "keyword": "H4 · Person verschüttet",
+     "large": false
+    },
+    {
+     "title": "Gerüst eingestürzt",
+     "keyword": "H4 · Bauunfall",
+     "large": true
+    },
+    {
+     "title": "Zug fährt in umgestürzten Baum",
+     "keyword": "H5 · Unfall Schienenfahrzeug",
+     "large": true
+    },
+    {
+     "title": "Pferd im Graben",
+     "keyword": "H1 · Tierrettung / Tier in Not",
+     "large": false
+    },
+    {
+     "title": "Wasser läuft durch die Decke",
+     "keyword": "H1 · Wassereinbruch",
+     "large": false
+    },
+    {
+     "title": "Dachziegel fliegen auf den Gehweg",
+     "keyword": "H1 · Baum-/Sturmschaden",
+     "large": false
+    },
+    {
+     "title": "Wanderin im steilen Weinberg",
+     "keyword": "H1 · Schleifkorbtrage",
+     "large": false
+    },
+    {
+     "title": "Steckengeblieben im Aufzug",
+     "keyword": "H0 · Erkundung - Hilfeleistung",
+     "large": false
+    },
+    {
+     "title": "Kind im Eis eingebrochen",
+     "keyword": "322 · Eisunfall",
+     "large": false
+    },
+    {
+     "title": "Stinkende Kanister am Waldparkplatz",
+     "keyword": "G1 · Gefahrstoffeinsatz klein",
+     "large": false
+    },
+    {
+     "title": "Ölfilm auf der Murr",
+     "keyword": "G1 · Öl auf Gewässer",
+     "large": false
+    },
+    {
+     "title": "Benzin läuft aus dem Tank",
+     "keyword": "G1 · Öl/Benzin läuft aus klein",
+     "large": false
+    },
+    {
+     "title": "Chlorgas im Hallenbad",
+     "keyword": "G3 · Gefahrstoffunfall",
+     "large": true
+    },
+    {
+     "title": "Unfall mit Prüfstrahler-Transport",
+     "keyword": "G3 · Strahlenschutzunfall",
+     "large": false
+    },
+    {
+     "title": "Gasflasche am Marktstand zischt",
+     "keyword": "H3 · Gasaustritt (bestätigt)",
+     "large": false
+    },
+    {
+     "title": "Kind mit Bein im Gitterrost",
+     "keyword": "H3 · Person eingeklemmt",
+     "large": false
+    },
+    {
+     "title": "Traktor am Hang umgestürzt",
+     "keyword": "327 · Unfall eingeklemmt",
+     "large": false
+    },
+    {
+     "title": "Gleitschirmflieger hängt im Baum",
+     "keyword": "H2 · Person abgestürzt",
+     "large": false
+    }
+   ]
   },
   {
    "id": "mischlagen",
@@ -69,7 +757,144 @@
    "cases": 25,
    "file": "mischlagen.json",
    "sha256": "2AA3E3BEE5C19932A1A654F3AA4270E8AC4B158BB8F65C84D6BF78913F44B841",
-   "size": 52789
+   "size": 52789,
+   "author": "ILS Rems-Murr Simulation",
+   "category": "Gemischt",
+   "tags": [
+    "MANV",
+    "Verkehr",
+    "Bahn",
+    "Unwetter"
+   ],
+   "updated": "2026-10-31",
+   "changes": "",
+   "contents": [
+    {
+     "title": "Motorrad gegen Auto in der Kurve",
+     "keyword": "333 · VU schwer",
+     "large": false
+    },
+    {
+     "title": "Kind auf dem Schulweg angefahren",
+     "keyword": "331 · VU",
+     "large": false
+    },
+    {
+     "title": "Auffahrunfall im Nebel",
+     "keyword": "1 · MANV 1 (5-10 Verletzte)",
+     "large": true
+    },
+    {
+     "title": "Reisebus umgekippt",
+     "keyword": "2 · MANV 2 (11-24 Verletzte)",
+     "large": true
+    },
+    {
+     "title": "Reizgas im Klassenzimmer",
+     "keyword": "1 · MANV 1 (5-10 Verletzte)",
+     "large": true
+    },
+    {
+     "title": "Gäste in Shisha-Bar umgekippt",
+     "keyword": "242 · Intoxikation Inhalativ",
+     "large": true
+    },
+    {
+     "title": "Landwirt in der Güllegrube",
+     "keyword": "242 · Intoxikation Inhalativ",
+     "large": false
+    },
+    {
+     "title": "Auto unter LKW-Auflieger",
+     "keyword": "334 · VU schwer, eingekl. Person",
+     "large": true
+    },
+    {
+     "title": "Automatische Unfallmeldung, Auto im Acker",
+     "keyword": "335 · VU eCall",
+     "large": false
+    },
+    {
+     "title": "Gegen den Brückenpfeiler",
+     "keyword": "332 · VU, eingekl. Person",
+     "large": false
+    },
+    {
+     "title": "Regionalbahn erfasst Lieferwagen",
+     "keyword": "330 · Unfall Schienenfahrzeug",
+     "large": true
+    },
+    {
+     "title": "Sturmböe trifft Festzelt",
+     "keyword": "1 · MANV 1 (5-10 Verletzte)",
+     "large": true
+    },
+    {
+     "title": "Läufer bricht im Ziel zusammen",
+     "keyword": "340 · Hitzschlag / Sonnenstich",
+     "large": false
+    },
+    {
+     "title": "Brand mit leblosem Bewohner",
+     "keyword": "B3 · Wohnungsbrand",
+     "large": false
+    },
+    {
+     "title": "Brand im Wohnheim für Menschen mit Behinderung",
+     "keyword": "411b · Wohn./Geb.Brand (Pflege-/Betreuungseinrichtung)",
+     "large": true
+    },
+    {
+     "title": "Kind im verrauchten Kinderzimmer",
+     "keyword": "411c · Wohn./Geb.Brand (Menschenleben in Gefahr)",
+     "large": false
+    },
+    {
+     "title": "Auto in überfluteter Unterführung",
+     "keyword": "6 · Unwetter",
+     "large": false
+    },
+    {
+     "title": "Jugendlicher an der Oberleitung",
+     "keyword": "325 · Stromunfall",
+     "large": false
+    },
+    {
+     "title": "Notlandung eines Ultraleichtflugzeugs",
+     "keyword": "329 · Unfall Luftfahrzeug",
+     "large": false
+    },
+    {
+     "title": "Säure über Arbeiter gelaufen",
+     "keyword": "321 · Betriebsunfall",
+     "large": false
+    },
+    {
+     "title": "Kassierer bei Überfall verletzt",
+     "keyword": "416 · Überfall",
+     "large": false
+    },
+    {
+     "title": "Frau verletzt, Mann noch in der Wohnung",
+     "keyword": "415 · Polizeilage",
+     "large": false
+    },
+    {
+     "title": "Hausnotruf: Rauchmelder, keine Antwort",
+     "keyword": "376 · Unklare Lage",
+     "large": false
+    },
+    {
+     "title": "Kleinkind aus dem Fenster gefallen",
+     "keyword": "326 · Sturz",
+     "large": false
+    },
+    {
+     "title": "Schwimmer im Baggersee untergegangen",
+     "keyword": "320 · Bade-/Tauch-/Ertrinkungsunfall Ertrinkungsunfall",
+     "large": false
+    }
+   ]
   }
  ]
 }
