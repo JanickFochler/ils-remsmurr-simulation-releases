@@ -1,0 +1,1732 @@
+{
+ "id": "mischlagen",
+ "title": "Verkehr, MANV & Mischlagen",
+ "description": "Rettungsdienst und Feuerwehr gemeinsam: Massenunfälle, Bahn, Unwetter, Eigenschutz.",
+ "version": 1,
+ "author": "ILS Rems-Murr Simulation",
+ "cases": [
+  {
+   "id": "ml-motorrad",
+   "draft": {
+    "title": "Motorrad gegen Auto in der Kurve",
+    "event": "Motorradfahrer ist in einer Kurve mit einem entgegenkommenden PKW zusammengestoßen und liegt auf der Fahrbahn.",
+    "locationQuery": "Landstraße, {ort}",
+    "locationFallbackQuery": "Kreisstraße, {ort}",
+    "hazards": "Kurve, auslaufende Betriebsstoffe",
+    "patients": 2,
+    "patientCondition": "Polytrauma Motorradfahrer, Autofahrerin unverletzt mit Schock",
+    "requiredTypes": [
+     "RTW",
+     "NEF",
+     "RTH",
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Tobias Frey",
+      "relationship": "Zeuge, Motorradfahrer",
+      "position": "kniet beim Verletzten",
+      "observations": "Hier ist ein Motorradfahrer in ein Auto gekracht! Er liegt auf der Straße und bewegt sich kaum.",
+      "consciousness": "Er stöhnt, die Augen sind zu.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: der Motorradfahrer schwer, die Autofahrerin steht unter Schock",
+       "Verletzung: Bein verdreht, Blut am Helm",
+       "Atmung: atmet schnell",
+       "Gefahren: Kurve unübersichtlich, Benzin läuft aus",
+       "Schon getan: Helm aufgelassen, Warndreieck steht"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 480,
+      "description": "Er reagiert nicht mehr und atmet ganz flach",
+      "addTypes": [
+       "RTH"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie / Schockraum",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "333 · VU schwer"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-kind-rad",
+   "draft": {
+    "title": "Kind auf dem Schulweg angefahren",
+    "event": "Kind, 9, auf dem Fahrrad an einer Einmündung von einem abbiegenden Auto erfasst.",
+    "locationQuery": "Schulstraße, {ort}",
+    "locationFallbackQuery": "Hauptstraße, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Unterarmfraktur, Schürfwunden, Helm unbeschädigt",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Maurer",
+      "relationship": "Autofahrer, Unfallbeteiligter",
+      "position": "neben dem Kind auf dem Gehweg",
+      "observations": "Ich habe beim Abbiegen ein Kind auf dem Fahrrad erwischt! Es liegt auf dem Boden und weint.",
+      "consciousness": "Er ist wach, weint und ruft nach seiner Mama.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "erschüttert",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: etwa neun",
+       "Verletzung: das Knie blutet, der Arm tut weh, Helm war auf",
+       "Atmung: normal",
+       "Wer ist dabei: eine Frau kümmert sich mit um ihn"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "331 · VU"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-nebel-b14",
+   "draft": {
+    "title": "Auffahrunfall im Nebel",
+    "event": "Im dichten Nebel sind auf der Bundesstraße sechs Fahrzeuge aufeinander aufgefahren, mehrere Verletzte, eine Person eingeklemmt.",
+    "locationQuery": "Bundesstraße, {ort}",
+    "locationFallbackQuery": "Landstraße, {ort}",
+    "hazards": "Nebel, nachfolgender Verkehr",
+    "patients": 8,
+    "patientCondition": "eine Person eingeklemmt, zwei Schwerverletzte, fünf Leichtverletzte",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "NEF",
+     "HLF",
+     "RW",
+     "ELW",
+     "LNA",
+     "ORGL"
+    ],
+    "expectedKeywordGroups": [
+     "MANV"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Anja Kraft",
+      "relationship": "Unfallbeteiligte",
+      "position": "hinter der Leitplanke",
+      "observations": "Hier sind mehrere Autos aufeinander gefahren, man sieht nichts im Nebel! Überall liegen Teile, Leute schreien.",
+      "consciousness": "Mir geht es gut, ich habe nur den Gurt gespürt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 35",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: mindestens sechs Autos, viele Verletzte",
+       "Gefahren: dichter Nebel, es fahren immer noch Autos auf",
+       "Verletzung: in einem Auto ist einer eingeklemmt"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Herr Sommer",
+      "relationship": "LKW-Fahrer",
+      "position": "am Stauende",
+      "observations": "Ich stehe mit meinem LKW am Ende vom Unfall, ich habe die Warnblinker an. Vorne sind viele Verletzte.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "ruhig",
+      "delaySeconds": 90,
+      "answers": [
+       "Anzahl Betroffene: ich zähle acht Verletzte",
+       "Gefahren: Sicht unter fünfzig Meter"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Frau Ebner",
+      "relationship": "Unfallbeteiligte",
+      "position": "in ihrem Auto",
+      "observations": "Ich hänge in meinem Auto fest, die Tür geht nicht auf und meine Beine tun weh.",
+      "consciousness": "Ich bin wach.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 60",
+      "emotion": "ängstlich",
+      "delaySeconds": 150,
+      "answers": [
+       "Verletzung: beide Beine eingeklemmt",
+       "Gefahren: es riecht nach Benzin"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "ZusaetzlicheBetroffene",
+      "trigger": "nachEintreffen",
+      "seconds": 420,
+      "description": "Ein weiteres Auto fährt in die Unfallstelle, zwei zusätzliche Verletzte",
+      "addTypes": [
+       "RTW",
+       "RTW"
+      ]
+     }
+    ],
+    "technicalRescue": true,
+    "rescueSeconds": 1500,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "1 · MANV 1 (5-10 Verletzte)"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-reisebus",
+   "draft": {
+    "title": "Reisebus umgekippt",
+    "event": "Ein Reisebus mit Senioren ist an einer Ausfahrt von der Fahrbahn abgekommen und auf die Seite gekippt.",
+    "locationQuery": "Bundesstraße, {ort}",
+    "locationFallbackQuery": "Landstraße, {ort}",
+    "hazards": "umgestürzter Bus, auslaufender Diesel",
+    "patients": 16,
+    "patientCondition": "drei Schwerverletzte, dreizehn Leichtverletzte",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "NEF",
+     "HLF",
+     "HLF",
+     "RW",
+     "ELW",
+     "LNA",
+     "ORGL"
+    ],
+    "expectedKeywordGroups": [
+     "MANV"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Busfahrer Kowalski",
+      "relationship": "Busfahrer",
+      "position": "neben dem Bus",
+      "observations": "Mein Bus ist umgekippt! Ich habe 38 Senioren drin, viele sind verletzt, manche kommen nicht raus!",
+      "consciousness": "Ich bin leicht verletzt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "unter Schock",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: 38 Fahrgäste, bestimmt fünfzehn verletzt",
+       "Gefahren: Bus liegt auf der Seite, Diesel läuft",
+       "Verletzung: viele Platzwunden, einige liegen unter Sitzen"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Petra Lehmann",
+      "relationship": "Autofahrerin",
+      "position": "hinter dem Bus",
+      "observations": "Vor mir ist ein Reisebus umgekippt, da klettern Leute aus den Fenstern, viele bluten!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "aufgeregt",
+      "delaySeconds": 60,
+      "answers": [
+       "Anzahl Betroffene: sehr viele alte Leute"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1800,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "mehrere Kliniken",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "2 · MANV 2 (11-24 Verletzte)"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-reizgas-schule",
+   "draft": {
+    "title": "Reizgas im Klassenzimmer",
+    "event": "In einer Schule hat ein Schüler Pfefferspray versprüht, mehrere Schüler husten und haben brennende Augen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Reizstoff im Gebäude",
+    "patients": 9,
+    "patientCondition": "neun Schüler mit Reizstoffexposition, einer mit Asthmaanfall",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "LF",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "MANV"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "Neun Schüler gesichtet, Augenspülung, ein Asthmaanfall behandelt, zwei Transporte, Rest an Eltern übergeben.",
+    "callers": [
+     {
+      "name": "Konrektorin Seiler",
+      "relationship": "Konrektorin",
+      "position": "auf dem Schulhof",
+      "observations": "Bei uns in der Schule hat jemand Pfefferspray versprüht, neun Kinder husten und haben brennende Augen. Wir haben das Gebäude geräumt.",
+      "consciousness": "Mir geht es gut, meine Augen brennen etwas.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 50",
+      "emotion": "gefasst",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: neun Schüler, eins hat Asthma und kriegt schlecht Luft",
+       "Gefahren: Reizstoff im Flur im ersten Stock",
+       "Zugang: Haupteingang, Hausmeister wartet"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Vater Brandl",
+      "relationship": "Vater eines Schülers",
+      "position": "vor der Schule",
+      "observations": "Meine Tochter hat mich angerufen, an der Schule ist was mit Gas, die Kinder können nicht atmen!",
+      "consciousness": "Ich weiß nichts Genaues.",
+      "timeline": "gerade gehört",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "aufgebracht",
+      "delaySeconds": 120,
+      "answers": [
+       "Anzahl Betroffene: weiß ich nicht genau"
+      ],
+      "behavior": "Ist aufgebracht und übertreibt, weiß aber nichts aus erster Hand."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "objekt",
+    "objectType": "Schule",
+    "keyword": "1 · MANV 1 (5-10 Verletzte)"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-shisha",
+   "draft": {
+    "title": "Gäste in Shisha-Bar umgekippt",
+    "event": "In einer Shisha-Bar klagen mehrere Gäste über Kopfschmerzen und Schwindel, eine Frau ist bewusstlos geworden.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Kohlenmonoxid im Gastraum",
+    "patients": 6,
+    "patientCondition": "Kohlenmonoxidvergiftung, eine Person schwer",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "LF",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "Intoxikationen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "CO-Messung im Gastraum stark erhöht, sechs Betroffene, eine Patientin für Druckkammer.",
+    "callers": [
+     {
+      "name": "Barkeeper Hassan",
+      "relationship": "Mitarbeiter",
+      "position": "vor der Bar",
+      "observations": "Bei uns in der Bar ist eine Frau umgekippt, und jetzt haben auch noch andere Kopfweh und Schwindel. Ich weiß nicht was los ist.",
+      "consciousness": "Die Frau ist wieder ein bisschen wach, aber ganz schlapp.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "verwirrt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: eine Frau umgekippt, vier andere haben Kopfweh",
+       "Gefahren: wir haben die Kohlen drin im Ofen",
+       "Schon getan: Fenster auf, alle raus"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Gast Müller",
+      "relationship": "Gast",
+      "position": "auf dem Gehweg",
+      "observations": "Ich war gerade in der Shishabar, mir ist total schlecht und schwindelig, meinem Kumpel auch.",
+      "consciousness": "Ich bin wach.",
+      "timeline": "seit einer halben Stunde",
+      "unknown": [],
+      "voice": "männlich, etwa 25",
+      "emotion": "beunruhigt",
+      "delaySeconds": 90,
+      "answers": [
+       "Anzahl Betroffene: wir sind zu zweit"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Druckkammer / Innere",
+    "locationKind": "objekt",
+    "objectType": "Gaststätte",
+    "keyword": "242 · Intoxikation Inhalativ"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-guellegrube",
+   "draft": {
+    "title": "Landwirt in der Güllegrube",
+    "event": "Ein Landwirt ist beim Rühren in eine Güllegrube gestürzt, sein Sohn will hinterherklettern.",
+    "locationQuery": "Aussiedlerhof, {ort}",
+    "locationFallbackQuery": "Feldweg, {ort}",
+    "hazards": "Schwefelwasserstoff, Absturz, Retter in Gefahr",
+    "patients": 1,
+    "patientCondition": "Faulgasvergiftung, bewusstlos in der Grube",
+    "requiredTypes": [
+     "HLF",
+     "RW",
+     "RTW",
+     "NEF",
+     "GW-A"
+    ],
+    "expectedKeywordGroups": [
+     "Intoxikationen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Martina Ruoff",
+      "relationship": "Ehefrau",
+      "position": "am Rand der Güllegrube",
+      "observations": "Mein Mann ist in die Güllegrube gefallen! Er bewegt sich nicht mehr! Mein Sohn will runter!",
+      "consciousness": "Er liegt unten, rührt sich nicht.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 55",
+      "emotion": "hysterisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: mein Mann unten, mein Sohn will hinterher",
+       "Gefahren: es stinkt nach faulen Eiern",
+       "Höhe: etwa drei Meter tief",
+       "Zugang: Hof am Ortsrand, Grube hinter dem Stall"
+      ],
+      "behavior": "Muss dringend angewiesen werden, dass niemand ohne Atemschutz in die Grube steigt."
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "ZusaetzlicheBetroffene",
+      "trigger": "ohneHilfe",
+      "seconds": 300,
+      "description": "Der Sohn ist hinterhergestiegen und auch zusammengebrochen",
+      "addTypes": [
+       "RTW",
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": true,
+    "rescueSeconds": 900,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere / Intensiv",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "242 · Intoxikation Inhalativ"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-lkw-pkw",
+   "draft": {
+    "title": "Auto unter LKW-Auflieger",
+    "event": "Ein PKW ist unter den Auflieger eines abbiegenden LKW geraten, zwei Insassen eingeklemmt.",
+    "locationQuery": "Bundesstraße, {ort}",
+    "locationFallbackQuery": "Hauptstraße, {ort}",
+    "hazards": "Fahrzeug unter Last, auslaufender Kraftstoff",
+    "patients": 3,
+    "patientCondition": "zwei eingeklemmte Schwerverletzte, LKW-Fahrer mit psychischem Schock",
+    "requiredTypes": [
+     "HLF",
+     "RW",
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "NEF",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Holger Brandt",
+      "relationship": "Zeuge",
+      "position": "neben dem Unfall",
+      "observations": "Ein Auto ist unter einen LKW gerutscht! Das Dach ist eingedrückt, da sitzen zwei Leute drin!",
+      "consciousness": "Der Fahrer stöhnt, die Beifahrerin sagt nichts.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "schockiert",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: zwei im Auto, der LKW-Fahrer steht unter Schock",
+       "Gefahren: Auto steckt fest, Kraftstoff läuft",
+       "Verletzung: Fahrer blutet am Kopf"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "LKW-Fahrer Novak",
+      "relationship": "LKW-Fahrer",
+      "position": "an seiner Zugmaschine",
+      "observations": "Ich bin beim Abbiegen, das Auto ist unter meinen Auflieger. Soll ich zurücksetzen?",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "unter Schock",
+      "delaySeconds": 60,
+      "answers": [
+       "Gefahren: Auflieger beladen mit Stahl"
+      ],
+      "behavior": "Will das Fahrzeug bewegen und muss angewiesen werden, nichts zu verändern."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1800,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "334 · VU schwer, eingekl. Person"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-ecall-feld",
+   "draft": {
+    "title": "Automatische Unfallmeldung, Auto im Acker",
+    "event": "Automatische Unfallmeldung: PKW auf glatter Straße ins Feld gerutscht, Fahrer leicht verletzt.",
+    "locationQuery": "Kreisstraße, {ort}",
+    "locationFallbackQuery": "Landstraße, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "HWS-Distorsion, Platzwunde unter Antikoagulation",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Petersen",
+      "relationship": "Betroffener über die automatische Sprechverbindung",
+      "position": "im Auto im Acker",
+      "observations": "Hallo? Das Auto hat automatisch angerufen. Ich bin auf dem Glatteis ins Feld gerutscht. Ich glaube, mir geht es einigermaßen.",
+      "consciousness": "Ich bin wach.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 70",
+      "emotion": "verwirrt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: nur ich",
+       "Verletzung: Nacken tut weh, ein bisschen Blut an der Stirn",
+       "Gefahren: Straße ist spiegelglatt",
+       "Vorerkrankungen: Blutverdünner"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "335 · VU eCall"
+   },
+   "town": "",
+   "large": false,
+   "twist": "automatische Unfallmeldung"
+  },
+  {
+   "id": "ml-glatteis-bruecke",
+   "draft": {
+    "title": "Gegen den Brückenpfeiler",
+    "event": "Auf Glatteis ist ein PKW gegen einen Brückenpfeiler gerutscht, Fahrerin mit den Beinen eingeklemmt.",
+    "locationQuery": "Brücke, {ort}",
+    "locationFallbackQuery": "Landstraße, {ort}",
+    "hazards": "Glatteis, nachfolgender Verkehr",
+    "patients": 1,
+    "patientCondition": "eingeklemmte Fahrerin, Verdacht auf Femurfraktur",
+    "requiredTypes": [
+     "HLF",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Stefan Moll",
+      "relationship": "Zeuge, Autofahrer",
+      "position": "bei der Fahrerin",
+      "observations": "Eine Frau ist mit ihrem Auto gegen den Brückenpfeiler gerutscht, die Front ist komplett eingedrückt, sie kommt nicht raus!",
+      "consciousness": "Sie ist wach, hat starke Schmerzen in den Beinen.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: nur die Fahrerin",
+       "Verletzung: beide Beine eingeklemmt",
+       "Gefahren: totales Glatteis, ich wäre fast auch gerutscht",
+       "Atmung: normal"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1200,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "332 · VU, eingekl. Person"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-bahnuebergang",
+   "draft": {
+    "title": "Regionalbahn erfasst Lieferwagen",
+    "event": "An einem Bahnübergang ist eine Regionalbahn mit einem Lieferwagen kollidiert, Fahrer eingeklemmt, Fahrgäste verletzt.",
+    "locationQuery": "Bahnübergang, {ort}",
+    "locationFallbackQuery": "Landstraße, {ort}",
+    "hazards": "Oberleitung, Bahnbetrieb",
+    "patients": 7,
+    "patientCondition": "eingeklemmter Fahrer schwer verletzt, sechs leicht verletzte Fahrgäste",
+    "requiredTypes": [
+     "HLF",
+     "HLF",
+     "RW",
+     "ELW",
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "RTH"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Anwohner Gerber",
+      "relationship": "Anwohner",
+      "position": "am Bahnübergang",
+      "observations": "Am Bahnübergang ist der Zug in einen Lieferwagen gefahren! Der Wagen ist total zerdrückt, der Fahrer hängt drin!",
+      "consciousness": "Der Fahrer bewegt sich nicht.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "schockiert",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: der Fahrer im Lieferwagen, im Zug weiß ich nicht",
+       "Gefahren: Oberleitung hängt durch",
+       "Zugang: Bahnübergang an der Landstraße"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Triebfahrzeugführerin Weiss",
+      "relationship": "Triebfahrzeugführerin",
+      "position": "im Führerstand",
+      "observations": "Hier Regionalbahn, ich hatte einen Zusammenstoß am Bahnübergang. Im Zug sind mehrere Fahrgäste gestürzt.",
+      "consciousness": "Mir geht es gut, ich zittere.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "unter Schock",
+      "delaySeconds": 60,
+      "answers": [
+       "Anzahl Betroffene: 80 Fahrgäste, etwa sechs verletzt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1800,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "330 · Unfall Schienenfahrzeug"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-festzelt",
+   "draft": {
+    "title": "Sturmböe trifft Festzelt",
+    "event": "Eine Sturmböe hat ein Festzelt teilweise einstürzen lassen, Zeltstangen haben mehrere Besucher getroffen.",
+    "locationQuery": "Festplatz, {ort}",
+    "locationFallbackQuery": "Sportplatz, {ort}",
+    "hazards": "instabiles Zelt, Sturm, Menschenmenge",
+    "patients": 7,
+    "patientCondition": "ein Schädel-Hirn-Trauma, sechs Leichtverletzte",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "HLF",
+     "ELW",
+     "LNA"
+    ],
+    "expectedKeywordGroups": [
+     "MANV"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Festwirt Maier",
+      "relationship": "Festwirt",
+      "position": "im Zelt",
+      "observations": "Bei uns ist das Festzelt halb eingestürzt! Eine Stange ist umgefallen, mehrere Leute sind verletzt!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 55",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: etwa 300 Gäste, sieben verletzt, einer liegt unter der Plane",
+       "Gefahren: das Zelt flattert weiter, Strom für die Bühne",
+       "Zugang: Festplatz, Zufahrt über die Hauptstraße"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Sanitäterin Kühn",
+      "relationship": "Sanitätsdienst vor Ort",
+      "position": "beim Verletzten",
+      "observations": "Sanitätsdienst vom Fest hier. Ein Mann hat eine Zeltstange an den Kopf bekommen, bewusstseinsgetrübt. Wir brauchen dringend Notarzt.",
+      "consciousness": "Er reagiert nur auf Schmerz.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 30",
+      "emotion": "sachlich",
+      "delaySeconds": 120,
+      "answers": [
+       "Verletzung: Kopfplatzwunde, Pupillen ungleich",
+       "Anzahl Betroffene: noch sechs Leichtverletzte"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 900,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Neurochirurgie / Unfallchirurgie",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "1 · MANV 1 (5-10 Verletzte)"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-stadtlauf",
+   "draft": {
+    "title": "Läufer bricht im Ziel zusammen",
+    "event": "Beim Stadtlauf bei über 30 Grad ist ein Läufer kurz vor dem Ziel zusammengebrochen, verwirrt und glühend heiß.",
+    "locationQuery": "Marktplatz, {ort}",
+    "locationFallbackQuery": "Hauptstraße, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Hitzschlag mit Bewusstseinsstörung",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Thermische Schäden"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Helferin Graf",
+      "relationship": "Streckenposten",
+      "position": "beim Läufer an der Strecke",
+      "observations": "Hier ist ein Läufer zusammengebrochen, kurz vor dem Ziel. Er ist ganz heiß und redet wirres Zeug.",
+      "consciousness": "Er ist wach, aber völlig verwirrt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: etwa 40",
+       "Atmung: schnell",
+       "Verletzung: Schürfwunden vom Sturz",
+       "Schon getan: in den Schatten gelegt, Wasser drüber",
+       "Zugang: Zielbereich am Marktplatz, Absperrgitter"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 480,
+      "description": "Er fängt an zu krampfen",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "340 · Hitzschlag / Sonnenstich"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-brand-rea",
+   "draft": {
+    "title": "Brand mit leblosem Bewohner",
+    "event": "Wohnungsbrand im Erdgeschoss, ein Bewohner wird vermisst, Feuerwehr findet ihn leblos.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "gehbehinderter Bewohner in der Brandwohnung",
+    "patients": 1,
+    "patientCondition": "Bewohner mit schwerer Rauchgasintoxikation, Kreislaufstillstand nach Rettung",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Iris Reinhardt",
+      "relationship": "Nachbarin",
+      "position": "vor dem Haus",
+      "observations": "In der Wohnung unten brennt es, da kommen Flammen aus dem Fenster! Der Mann, der da wohnt, ist bestimmt drin, er ist gehbehindert.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade gesehen",
+      "unknown": [],
+      "voice": "weiblich, etwa 50",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: der Mann, über 70, im Rollstuhl",
+       "Stockwerk: Erdgeschoss rechts",
+       "Gefahren: Rauch zieht ins Treppenhaus",
+       "Zugang: Terrasse hinten am Haus"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "nachEintreffen",
+      "seconds": 240,
+      "description": "Der Bewohner wird leblos aus der Wohnung gebracht, Reanimation wird begonnen",
+      "addTypes": [
+       "NEF",
+       "RTW"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1200,
+    "hospitalNeed": "Innere / Intensiv",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B3 · Wohnungsbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-wohnheim",
+   "draft": {
+    "title": "Brand im Wohnheim für Menschen mit Behinderung",
+    "event": "Nachts Brand in einem Wohnheim für Menschen mit Behinderung, mehrere Bewohner müssen getragen werden.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "nicht selbstständig gehfähige Bewohner",
+    "patients": 5,
+    "patientCondition": "fünf Bewohner mit Rauchgasintoxikation",
+    "requiredTypes": [
+     "HLF",
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW",
+     "RTW",
+     "NEF",
+     "LNA"
+    ],
+    "expectedKeywordGroups": [
+     "Sonderlagen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Betreuer Lenz",
+      "relationship": "Nachtdienst",
+      "position": "vor dem Gebäude",
+      "observations": "Bei uns im Wohnheim brennt es im Gemeinschaftsraum! Ich bin allein im Nachtdienst, viele Bewohner sitzen im Rollstuhl!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "überfordert",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: 18 Bewohner, sechs im Rollstuhl, drei bettlägerig",
+       "Stockwerk: Brand im Erdgeschoss, Zimmer im ersten Stock",
+       "Gefahren: Rauch im Flur"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Anwohnerin Kurz",
+      "relationship": "Nachbarin",
+      "position": "auf ihrem Balkon gegenüber",
+      "observations": "Beim Wohnheim gegenüber kommt Rauch aus den Fenstern und oben rufen Leute!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade gesehen",
+      "unknown": [],
+      "voice": "weiblich, etwa 60",
+      "emotion": "aufgeregt",
+      "delaySeconds": 60,
+      "answers": [
+       "Anzahl Betroffene: oben am Fenster sind mindestens zwei"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Pflegeheim",
+    "keyword": "411b · Wohn./Geb.Brand (Pflege-/Betreuungseinrichtung)"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "ml-kind-eingeschlossen",
+   "draft": {
+    "title": "Kind im verrauchten Kinderzimmer",
+    "event": "Brand in einer Wohnung im ersten Stock, ein Kind ist im Kinderzimmer eingeschlossen, Mutter draußen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Kind in verrauchter Wohnung",
+    "patients": 1,
+    "patientCondition": "Kind mit Rauchgasintoxikation",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Sonderlagen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "Kind über die Drehleiter gerettet, wach, hustet, Rauchgasintoxikation.",
+    "callers": [
+     {
+      "name": "Nadine Schüle",
+      "relationship": "Mutter",
+      "position": "vor dem Haus",
+      "observations": "Meine Tochter ist noch oben im Kinderzimmer! In der Wohnung brennt es, ich komme nicht mehr rein!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 30",
+      "emotion": "hysterisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: meine Tochter ist vier",
+       "Stockwerk: erster Stock, Kinderzimmer zur Straße, Fenster mit Vorhang mit Sternen",
+       "Gefahren: Rauch kommt aus der Wohnungstür",
+       "Anzahl Betroffene: nur meine Tochter"
+      ],
+      "behavior": "Will zurück ins Haus und muss davon abgehalten werden."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1200,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "411c · Wohn./Geb.Brand (Menschenleben in Gefahr)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-unterfuehrung",
+   "draft": {
+    "title": "Auto in überfluteter Unterführung",
+    "event": "Bei Starkregen ist ein Auto in einer überfluteten Unterführung stecken geblieben, das Wasser steigt.",
+    "locationQuery": "Unterführung, {ort}",
+    "locationFallbackQuery": "Bahnhofstraße, {ort}",
+    "hazards": "steigendes Wasser, Strömung",
+    "patients": 1,
+    "patientCondition": "Person in Fahrzeug in Hochwasser, unterkühlt",
+    "requiredTypes": [
+     "HLF",
+     "BOOT",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Sonstiges"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Carina Wolf",
+      "relationship": "Fahrerin",
+      "position": "im Auto",
+      "observations": "Ich stecke mit meinem Auto in der Unterführung fest, das Wasser steigt! Es ist schon an den Türen!",
+      "consciousness": "Mir geht es gut, aber ich habe Angst.",
+      "timeline": "seit fünf Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 25",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: ich und mein Hund",
+       "Gefahren: Wasser steigt schnell, Motor ist aus",
+       "Ort: Unterführung unter der Bahnlinie"
+      ],
+      "behavior": "Braucht klare Anweisungen: Fenster öffnen, aufs Dach steigen, nicht ins Wasser."
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 420,
+      "description": "Das Wasser ist im Auto, sie sitzt auf dem Dach",
+      "addTypes": [
+       "BOOT"
+      ]
+     }
+    ],
+    "technicalRescue": true,
+    "rescueSeconds": 900,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "6 · Unwetter"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-oberleitung",
+   "draft": {
+    "title": "Jugendlicher an der Oberleitung",
+    "event": "Jugendlicher ist im Bahnhofsbereich auf einen abgestellten Güterwaggon geklettert und hat einen Stromschlag von der Oberleitung bekommen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Oberleitung 15.000 Volt, Erdung durch Bahn nötig",
+    "patients": 1,
+    "patientCondition": "Hochspannungsunfall mit großflächigen Verbrennungen",
+    "requiredTypes": [
+     "HLF",
+     "RTW",
+     "NEF",
+     "RTH"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Jonas Ebert",
+      "relationship": "Freund",
+      "position": "neben den Gleisen",
+      "observations": "Mein Kumpel ist auf einen Waggon geklettert und dann hat es geknallt! Er liegt oben drauf und brennt an der Kleidung!",
+      "consciousness": "Er bewegt sich, schreit.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, Jugendlicher, etwa 16",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 16",
+       "Verletzung: Verbrennungen, Kleidung hat gebrannt",
+       "Gefahren: Oberleitung, Gleise",
+       "Zugang: Güterbahnhof, Loch im Zaun"
+      ],
+      "behavior": "Will selbst auf den Waggon klettern, um zu helfen, und muss davon abgehalten werden."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": true,
+    "rescueSeconds": 1200,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Brandverletztenzentrum",
+    "locationKind": "objekt",
+    "objectType": "Bahnhof",
+    "keyword": "325 · Stromunfall"
+   },
+   "town": "Backnang",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-ultraleicht",
+   "draft": {
+    "title": "Notlandung eines Ultraleichtflugzeugs",
+    "event": "Ein Ultraleichtflugzeug hat auf einem Acker notgelandet und sich überschlagen, Pilot verletzt.",
+    "locationQuery": "Feldweg, {ort}",
+    "locationFallbackQuery": "Kreisstraße, {ort}",
+    "hazards": "auslaufender Kraftstoff, Brandgefahr",
+    "patients": 1,
+    "patientCondition": "Pilot eingeklemmt, Wirbelsäulenverletzung",
+    "requiredTypes": [
+     "HLF",
+     "RTW",
+     "NEF",
+     "RTH"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Spaziergängerin Moser",
+      "relationship": "Spaziergängerin",
+      "position": "am Feldrand",
+      "observations": "Hier ist gerade ein kleines Flugzeug auf dem Acker gelandet und hat sich überschlagen! Ich sehe jemanden drin!",
+      "consciousness": "Er bewegt sich, ruft.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 50",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: einer im Flugzeug, vielleicht zwei",
+       "Gefahren: es riecht stark nach Benzin",
+       "Zugang: Feldweg von der Kreisstraße"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Feuerentwicklung",
+      "trigger": "ohneHilfe",
+      "seconds": 420,
+      "description": "Am Motor kommt Rauch raus",
+      "addTypes": [
+       "LF"
+      ]
+     }
+    ],
+    "technicalRescue": true,
+    "rescueSeconds": 1000,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "329 · Unfall Luftfahrzeug"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-galvanik",
+   "draft": {
+    "title": "Säure über Arbeiter gelaufen",
+    "event": "In einem Galvanikbetrieb ist ein Behälter mit Säure umgekippt, ein Arbeiter an Beinen und Armen verätzt.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Säure, Dämpfe, Dekontamination",
+    "patients": 3,
+    "patientCondition": "Säureverätzung an Beinen und Arm, zwei Kollegen mit Reizgasinhalation",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "NEF",
+     "HLF",
+     "GW-A"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Meister Rapp",
+      "relationship": "Meister",
+      "position": "an der Notdusche beim Verletzten",
+      "observations": "Bei uns ist ein Säurebehälter umgekippt und über einen Mitarbeiter gelaufen! Er steht unter der Notdusche.",
+      "consciousness": "Er ist wach, schreit vor Schmerzen.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "gestresst",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 28",
+       "Verletzung: beide Beine und linker Arm",
+       "Gefahren: Säure läuft auf dem Hallenboden, es dampft",
+       "Schon getan: Kleidung runter, Notdusche",
+       "Anzahl Betroffene: ein Verletzter, zwei Kollegen husten"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Brandverletztenzentrum",
+    "locationKind": "objekt",
+    "objectType": "Gewerbegebiet",
+    "keyword": "321 · Betriebsunfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-tankstelle",
+   "draft": {
+    "title": "Kassierer bei Überfall verletzt",
+    "event": "Tankstelle überfallen, Kassierer mit einem Messer am Arm verletzt, Täter geflüchtet.",
+    "locationQuery": "Tankstelle, {ort}",
+    "locationFallbackQuery": "Hauptstraße, {ort}",
+    "hazards": "flüchtiger bewaffneter Täter, Eigenschutz, Polizei",
+    "patients": 1,
+    "patientCondition": "Schnittverletzung Unterarm mit arterieller Blutung",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Sonderlagen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Kassiererin Lang",
+      "relationship": "Kollegin",
+      "position": "im Lager der Tankstelle, Tür abgeschlossen",
+      "observations": "Wir sind gerade überfallen worden! Mein Kollege ist mit dem Messer am Arm verletzt, es blutet stark!",
+      "consciousness": "Er ist wach und ganz blass.",
+      "timeline": "vor einer Minute",
+      "unknown": [],
+      "voice": "weiblich, etwa 25",
+      "emotion": "verängstigt, flüsternd",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: mein Kollege",
+       "Blutung: am Unterarm, spritzt etwas",
+       "Gefahren: der Täter ist zu Fuß Richtung Bahnhof weg, ich weiß nicht ob er zurückkommt",
+       "Schon getan: Handtuch drauf gedrückt"
+      ],
+      "behavior": "Flüstert, hat Angst, dass der Täter zurückkommt."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Handchirurgie",
+    "locationKind": "objekt",
+    "objectType": "",
+    "keyword": "416 · Überfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Eigenschutz bei Überfall"
+  },
+  {
+   "id": "ml-haeusliche-gewalt",
+   "draft": {
+    "title": "Frau verletzt, Mann noch in der Wohnung",
+    "event": "Frau meldet sich aus dem Bad: Ehemann hat sie geschlagen, sie blutet, er ist noch in der Wohnung und betrunken.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "aggressiver Täter vor Ort, Bereitstellung bis Polizei sichert",
+    "patients": 1,
+    "patientCondition": "Kopfplatzwunde und Gesichtsprellung nach häuslicher Gewalt",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Sonderlagen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Frau S.",
+      "relationship": "Betroffene selbst",
+      "position": "im Bad eingeschlossen",
+      "observations": "Bitte kommen Sie schnell. Mein Mann hat mich geschlagen, ich blute an der Stirn. Ich habe mich im Bad eingeschlossen.",
+      "consciousness": "Ich bin wach, mir ist schwindelig.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "verängstigt, leise",
+      "delaySeconds": 0,
+      "answers": [
+       "Verletzung: Platzwunde an der Stirn, das Auge schwillt zu",
+       "Gefahren: er ist betrunken und tobt im Wohnzimmer, er hat ein Messer in der Küche",
+       "Stockwerk: dritter Stock",
+       "Wer ist dabei: meine Kinder schlafen im Kinderzimmer"
+      ],
+      "behavior": "Spricht sehr leise und legt fast auf, wenn der Mann an die Tür klopft."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "415 · Polizeilage"
+   },
+   "town": "",
+   "large": false,
+   "twist": "Bereitstellung, Eigenschutz"
+  },
+  {
+   "id": "ml-hausnotruf-rauch",
+   "draft": {
+    "title": "Hausnotruf: Rauchmelder, keine Antwort",
+    "event": "Hausnotrufzentrale meldet: Rauchmelder bei einer Teilnehmerin hat ausgelöst, die Frau reagiert nicht auf die Sprechverbindung.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Seniorin mit leichter Rauchgasexposition, verbranntes Essen",
+    "requiredTypes": [
+     "RTW",
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "Sonstige Stichworte"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "Topf auf eingeschalteter Herdplatte, Bewohnerin verwirrt im Schlafzimmer, leichter Reizhusten.",
+    "callers": [
+     {
+      "name": "Herr Kessler",
+      "relationship": "Mitarbeiter Hausnotrufzentrale",
+      "position": "in der Hausnotrufzentrale",
+      "observations": "Hier ist die Hausnotrufzentrale. Bei unserer Teilnehmerin hat der Funkrauchmelder ausgelöst, sie meldet sich nicht über die Sprechverbindung. Ich höre nur den Melder.",
+      "consciousness": "Keine Antwort über die Sprechverbindung.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: die Teilnehmerin ist 91",
+       "Vorerkrankungen: Demenz, Sturzneigung",
+       "Zugang: Schlüssel liegt bei der Nachbarin im ersten Stock",
+       "Stockwerk: Erdgeschoss"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "376 · Unklare Lage"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-kind-fenster",
+   "draft": {
+    "title": "Kleinkind aus dem Fenster gefallen",
+    "event": "Kind, 3, ist aus einem Fenster im ersten Stock auf eine Terrasse gefallen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Sturz aus vier Metern, Schädel-Hirn-Trauma",
+    "requiredTypes": [
+     "RTW",
+     "NEF",
+     "RTH"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Viktor Morosow",
+      "relationship": "Vater",
+      "position": "auf der Terrasse beim Kind",
+      "observations": "Mein Sohn ist aus dem Fenster gefallen, aus dem ersten Stock auf die Steine! Er weint, aber er blutet am Kopf!",
+      "consciousness": "Er weint, ist wach.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 35",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: drei",
+       "Höhe: erster Stock, etwa vier Meter",
+       "Verletzung: Beule und Blut am Hinterkopf, er hat erbrochen",
+       "Atmung: weint, atmet"
+      ],
+      "behavior": "Will das Kind hochheben und herumtragen; muss angewiesen werden, es möglichst ruhig liegen zu lassen."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik / Neurochirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "326 · Sturz"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "ml-baggersee",
+   "draft": {
+    "title": "Schwimmer im Baggersee untergegangen",
+    "event": "Ein junger Mann ist beim Schwimmen zur Insel im Baggersee untergegangen und nicht wieder aufgetaucht.",
+    "locationQuery": "Baggersee, {ort}",
+    "locationFallbackQuery": "See, {ort}",
+    "hazards": "Badegäste im Wasser, Tiefe unbekannt",
+    "patients": 1,
+    "patientCondition": "Ertrinkungsunfall mit Kreislaufstillstand nach Bergung",
+    "requiredTypes": [
+     "HLF",
+     "BOOT",
+     "RTW",
+     "NEF",
+     "RTH"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Selin Arslan",
+      "relationship": "Freundin",
+      "position": "am Ufer",
+      "observations": "Mein Freund ist untergegangen! Er wollte zur Insel schwimmen und ist nicht mehr hochgekommen!",
+      "consciousness": "Ich sehe ihn nicht mehr.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 20",
+      "emotion": "hysterisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 22",
+       "Anzahl Betroffene: mein Freund",
+       "Ort: ungefähr in der Mitte zwischen Ufer und Insel",
+       "Alkohol: er hat zwei Bier getrunken",
+       "Schon getan: Leute schwimmen da hin und suchen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Nachforderung",
+      "trigger": "nachEintreffen",
+      "seconds": 300,
+      "description": "Suche an der Oberfläche erfolglos, Taucher werden benötigt",
+      "addTypes": [
+       "BOOT"
+      ]
+     }
+    ],
+    "technicalRescue": true,
+    "rescueSeconds": 900,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere / Intensiv",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "320 · Bade-/Tauch-/Ertrinkungsunfall Ertrinkungsunfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  }
+ ]
+}

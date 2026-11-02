@@ -1,0 +1,1603 @@
+{
+ "id": "brand",
+ "title": "Brandeinsätze",
+ "description": "Von Papierkorb bis Hotelbrand: Tiefgarage, Scheune, E-Bike-Akku, Photovoltaik und Gefahrgut.",
+ "version": 1,
+ "author": "ILS Rems-Murr Simulation",
+ "cases": [
+  {
+   "id": "br-tiefgarage",
+   "draft": {
+    "title": "Auto brennt in Tiefgarage",
+    "event": "In der Tiefgarage eines Mehrfamilienhauses brennt ein Auto, dichter Rauch dringt ins Treppenhaus.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Rauch im Treppenhaus, Elektrofahrzeuge in der Garage",
+    "patients": 1,
+    "patientCondition": "eine Bewohnerin auf dem Balkon, leichter Reizhusten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "GW-A",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Markus Engel",
+      "relationship": "Bewohner",
+      "position": "vor dem Haus an der Garageneinfahrt",
+      "observations": "In unserer Tiefgarage brennt ein Auto! Aus der Einfahrt kommt schwarzer Rauch und im Treppenhaus riecht man es auch schon.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor drei Minuten bemerkt",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: weiß nicht, ob noch jemand unten ist",
+       "Gefahren: da unten stehen auch Elektroautos",
+       "Zugang: Einfahrt hinten am Haus, Tor ist zu",
+       "Stockwerk: Tiefgarage unter dem Haus, 40 Stellplätze"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Frau Lindner",
+      "relationship": "Bewohnerin",
+      "position": "im dritten Stock auf dem Balkon",
+      "observations": "Bei uns ist das Treppenhaus voller Rauch, ich komme nicht raus! Ich stehe auf dem Balkon.",
+      "consciousness": "Mir geht es gut, ich huste nur.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 70",
+      "emotion": "ängstlich",
+      "delaySeconds": 120,
+      "answers": [
+       "Stockwerk: dritter Stock, Balkon zur Straße",
+       "Wer ist dabei: mein Hund"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Feuerentwicklung",
+      "trigger": "nachEintreffen",
+      "seconds": 420,
+      "description": "Das Feuer greift auf zwei weitere Fahrzeuge über, Rauch drückt in alle Geschosse",
+      "addTypes": [
+       "LF",
+       "GW-A"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 2000,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B5 · Tiefgaragenbrand"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "br-hotel",
+   "draft": {
+    "title": "Rauch im Hotelflur",
+    "event": "Nachts Brand in einem Hotelzimmer im zweiten Obergeschoss, Flur verraucht, Gäste schlafen noch.",
+    "locationQuery": "Hotel, {ort}",
+    "locationFallbackQuery": "Bahnhofstraße, {ort}",
+    "hazards": "viele schlafende Gäste, verrauchter Flur",
+    "patients": 3,
+    "patientCondition": "drei Gäste mit Rauchgasintoxikation",
+    "requiredTypes": [
+     "HLF",
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Nachtportier Kaya",
+      "relationship": "Nachtportier",
+      "position": "an der Rezeption",
+      "observations": "Hier ist das Hotel, bei uns brennt es im zweiten Stock! Der Flur ist voller Rauch, die Brandmeldeanlage läuft.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "gestresst",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: 38 Gäste gemeldet, viele schlafen noch",
+       "Gefahren: Rauch im ganzen Flur im zweiten Stock",
+       "Zugang: Haupteingang, ich gebe Ihnen die Gästeliste"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Mr. Hughes",
+      "relationship": "Hotelgast",
+      "position": "im Zimmer im dritten Stock",
+      "observations": "Hello? There is smoke in the hallway, I can not go out! Zimmer drei-null-sieben.",
+      "consciousness": "Ich bin okay, aber Rauch kommt unter der Tür.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "ängstlich",
+      "delaySeconds": 90,
+      "answers": [
+       "Stockwerk: third floor, room 307",
+       "Gefahren: Rauch unter der Tür"
+      ],
+      "behavior": "Spricht hauptsächlich Englisch und nur wenige Worte Deutsch."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Hotel",
+    "keyword": "B5 · Brand Beherbergungsstätte"
+   },
+   "town": "Waiblingen",
+   "large": true,
+   "twist": "ein Anrufer spricht nur Englisch"
+  },
+  {
+   "id": "br-mehrzweckhalle",
+   "draft": {
+    "title": "Bühnenbrand beim Konzert",
+    "event": "Während eines Konzerts in der Mehrzweckhalle fängt der Bühnenvorhang Feuer, Halle wird geräumt.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Menschenmenge, Panikgefahr",
+    "patients": 4,
+    "patientCondition": "eine Person mit Thoraxtrauma, drei mit Reizhusten",
+    "requiredTypes": [
+     "HLF",
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Veranstalter Fritz",
+      "relationship": "Veranstalter",
+      "position": "vor der Halle",
+      "observations": "In der Mehrzweckhalle brennt der Bühnenvorhang! Wir räumen gerade, da sind 400 Leute drin.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor einer Minute",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "gehetzt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: 400 Besucher, ein paar sind beim Rausrennen gestürzt",
+       "Gefahren: Rauch unter der Hallendecke",
+       "Zugang: Haupteingang und zwei Notausgänge hinten"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Lisa Kern",
+      "relationship": "Besucherin",
+      "position": "auf dem Parkplatz",
+      "observations": "Hier ist eine Frau beim Rausrennen hingefallen und die Leute sind über sie drüber, sie kann nicht aufstehen.",
+      "consciousness": "Sie ist wach, hält sich den Arm.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 25",
+      "emotion": "aufgeregt",
+      "delaySeconds": 150,
+      "answers": [
+       "Verletzung: Arm und Rippen",
+       "Anzahl Betroffene: die eine Frau, noch zwei mit Husten"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1500,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Mehrzweckhalle",
+    "keyword": "B5 · Brand Versammlungsstätte"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "br-scheune",
+   "draft": {
+    "title": "Scheune mit Heu brennt",
+    "event": "Auf einem Aussiedlerhof brennt eine Scheune mit Heu und Stroh, daneben Stall mit Kühen.",
+    "locationQuery": "Aussiedlerhof, {ort}",
+    "locationFallbackQuery": "Feldweg, {ort}",
+    "hazards": "Dieseltank, Tiere, Wasserversorgung schwierig",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "TLF",
+     "ELW",
+     "GW-L"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Bauer Haug",
+      "relationship": "Landwirt",
+      "position": "auf dem Hof",
+      "observations": "Meine Scheune brennt! Lichterloh, da ist das ganze Heu drin. Nebendran ist der Kuhstall!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 55",
+      "emotion": "verzweifelt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand verletzt, 60 Kühe im Stall",
+       "Gefahren: Dieseltank neben der Scheune, Traktor drin",
+       "Zugang: Feldweg von der Kreisstraße, Hof liegt allein",
+       "Wasser: wir haben einen Löschteich hinterm Haus"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Feuerentwicklung",
+      "trigger": "ohneHilfe",
+      "seconds": 600,
+      "description": "Das Feuer springt auf das Dach vom Kuhstall über",
+      "addTypes": [
+       "LF",
+       "TLF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 2400,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "B4 · Landwirtschafliches Anwesen"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-efh-person",
+   "draft": {
+    "title": "Mann noch im brennenden Haus",
+    "event": "Einfamilienhaus brennt im Erdgeschoss, Ehefrau draußen, Ehemann noch im Haus.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Person im Gebäude, Heizöl im Keller",
+    "patients": 2,
+    "patientCondition": "vermisste Person mit schwerer Rauchgasintoxikation, Anruferin leicht",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Monika Schwarz",
+      "relationship": "Ehefrau",
+      "position": "im Garten vor dem Haus",
+      "observations": "Unser Haus brennt! Mein Mann ist noch drin, er wollte die Katze holen!",
+      "consciousness": "Mir geht es gut, ich huste.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 60",
+      "emotion": "hysterisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: mein Mann, Werner, ist noch drin",
+       "Stockwerk: er ist hoch ins Schlafzimmer, erster Stock hinten",
+       "Gefahren: im Keller ist Heizöl",
+       "Verletzung: ich habe Rauch eingeatmet"
+      ],
+      "behavior": "Will zurück ins Haus laufen und muss davon abgehalten werden."
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "ZusaetzlicheBetroffene",
+      "trigger": "nachEintreffen",
+      "seconds": 360,
+      "description": "Der Mann wird bewusstlos aus dem Schlafzimmer gerettet",
+      "addTypes": [
+       "RTW",
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B4 · Gebäudebrand EFH"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-wohnung-seniorin",
+   "draft": {
+    "title": "Rauch aus der Wohnung der Nachbarin",
+    "event": "Rauch dringt aus einer Wohnung im zweiten Stock, ältere Bewohnerin öffnet nicht.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Person vermutlich in der Wohnung",
+    "patients": 1,
+    "patientCondition": "ältere Frau mit Rauchgasintoxikation",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "Bewohnerin aus dem Schlafzimmer gerettet, ansprechbar, Rauchgasintoxikation, Brand in der Küche gelöscht.",
+    "callers": [
+     {
+      "name": "Kai Becker",
+      "relationship": "Nachbar",
+      "position": "im Treppenhaus vor der Wohnung",
+      "observations": "Aus der Wohnung von meiner Nachbarin kommt Rauch unter der Tür durch und der Rauchmelder piept. Sie macht nicht auf!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "seit fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 35",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: die Nachbarin, über 80, lebt allein",
+       "Stockwerk: zweiter Stock",
+       "Gefahren: Treppenhaus wird langsam verraucht",
+       "Zugang: Tür ist zu, ich habe keinen Schlüssel"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1200,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B3 · Wohnungsbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-akku",
+   "draft": {
+    "title": "E-Bike-Akku explodiert",
+    "event": "Beim Laden ist ein E-Bike-Akku im Wohnzimmer explodiert, Sofa brennt.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Lithium-Akku, Wiederentzündung möglich",
+    "patients": 1,
+    "patientCondition": "Verbrennung zweiten Grades an der Hand",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Sven Krause",
+      "relationship": "Bewohner",
+      "position": "vor der Haustür",
+      "observations": "Mein E-Bike-Akku ist beim Laden explodiert, es hat geknallt und jetzt brennt das Sofa! Wir sind raus.",
+      "consciousness": "Mir geht es gut, meine Hand ist ein bisschen verbrannt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: ich und meine Frau, wir sind draußen",
+       "Verletzung: rechte Hand, Blasen",
+       "Stockwerk: Erdgeschoss",
+       "Gefahren: da steht noch ein zweiter Akku"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 900,
+    "hospitalNeed": "Chirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B3 · Zimmerbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-lkw",
+   "draft": {
+    "title": "Lastwagen brennt am Parkplatz",
+    "event": "Auf einem Parkplatz an der Bundesstraße brennt der Auflieger eines Lastwagens mit Paketen.",
+    "locationQuery": "Bundesstraße, {ort}",
+    "locationFallbackQuery": "Landstraße, {ort}",
+    "hazards": "unbekannte Ladung",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "TLF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Dragan Petrović",
+      "relationship": "LKW-Fahrer",
+      "position": "neben dem Fahrzeug",
+      "observations": "Mein LKW brennt hinten! Ich habe die Zugmaschine abgekoppelt, aber der Auflieger brennt voll.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: nur ich, mir geht es gut",
+       "Gefahren: Pakete, ich weiß nicht genau was drin ist",
+       "Zugang: Parkplatz mit Raststätte"
+      ],
+      "behavior": "Spricht mit Akzent, versteht aber alles."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1500,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "B2 · LKW / Bus Brand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-schulbus",
+   "draft": {
+    "title": "Schulbus raucht",
+    "event": "Aus dem Motorraum eines Schulbusses dringt Rauch, Fahrer hat angehalten, Kinder steigen aus.",
+    "locationQuery": "Hauptstraße, {ort}",
+    "locationFallbackQuery": "Schulstraße, {ort}",
+    "hazards": "viele Kinder an der Straße",
+    "patients": 1,
+    "patientCondition": "ein Kind mit leichtem Reizhusten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Busfahrerin Graf",
+      "relationship": "Busfahrerin",
+      "position": "neben dem Bus am Straßenrand",
+      "observations": "Aus meinem Bus kommt hinten Rauch raus, beim Motor! Ich lasse gerade die Kinder raus.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 50",
+      "emotion": "gestresst",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: 34 Schulkinder, eins hustet",
+       "Gefahren: die Kinder stehen direkt an der Straße",
+       "Zugang: Hauptstraße, Ortsausgang"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 900,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "B2 · LKW / Bus Brand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-pkw-ausserorts",
+   "draft": {
+    "title": "Auto brennt auf der Landstraße",
+    "event": "Ein Kleinwagen ist am Straßenrand liegengeblieben und brennt im Motorraum.",
+    "locationQuery": "Landstraße, {ort}",
+    "locationFallbackQuery": "Kreisstraße, {ort}",
+    "hazards": "Waldrand, trockene Vegetation",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Elke Strauß",
+      "relationship": "Fahrerin",
+      "position": "zwanzig Meter hinter dem Auto",
+      "observations": "Mein Auto brennt! Es hat erst gequalmt, dann kamen vorne Flammen raus.",
+      "consciousness": "Mir geht es gut, ich bin raus.",
+      "timeline": "vor zwei Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 55",
+      "emotion": "aufgewühlt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: nur ich, niemand verletzt",
+       "Gefahren: steht direkt am Waldrand, trockenes Gras"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 600,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "B2 · PKW Brand außerhalb Ort/Bundesstraße"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-gartenhuette",
+   "draft": {
+    "title": "Gartenhütte brennt, Gasflasche drin",
+    "event": "In einer Kleingartenanlage brennt eine Gartenhütte, darin eine Propangasflasche.",
+    "locationQuery": "Kleingartenanlage, {ort}",
+    "locationFallbackQuery": "Gartenstraße, {ort}",
+    "hazards": "Gasflasche, Ausbreitung auf Nachbarhütten",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "HLF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Ursula Heller",
+      "relationship": "Gartennachbarin",
+      "position": "zwei Gärten weiter",
+      "observations": "In der Gartenanlage brennt eine Hütte! Der Nachbar hat da immer seine Gasflasche für den Grill drin.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 65",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: der Besitzer ist nicht da",
+       "Gefahren: Gasflasche in der Hütte, Hecke fängt Feuer",
+       "Zugang: über den Hauptweg, Tor mit Schloss"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 700,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "B2 · Schuppenbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-oelofen",
+   "draft": {
+    "title": "Ölofen verpufft in der Werkstatt",
+    "event": "In einer Hobbywerkstatt ist ein Ölofen verpufft, Rauch und kleine Flammen am Ofen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Benzinkanister in der Werkstatt",
+    "patients": 1,
+    "patientCondition": "leichte Verbrennung im Gesicht",
+    "requiredTypes": [
+     "LF",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Bernd Gruber",
+      "relationship": "Betroffener selbst",
+      "position": "im Hof vor der Werkstatt",
+      "observations": "Mein Ölofen in der Werkstatt hat einen Knall gemacht, jetzt qualmt es und am Ofen sind Flammen.",
+      "consciousness": "Mir geht es gut, Augenbrauen sind ein bisschen angesengt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 65",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: nur ich",
+       "Gefahren: Benzinkanister im Regal",
+       "Verletzung: Gesicht ein bisschen rot"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 600,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B2 · Ölofenbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-container-baustelle",
+   "draft": {
+    "title": "Container brennt am Gerüst",
+    "event": "Ein großer Bauschuttcontainer brennt direkt an einem eingerüsteten Wohnhaus, Planen am Gerüst fangen Feuer.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Brandausbreitung über das Gerüst auf das Wohnhaus",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Doğan",
+      "relationship": "Anwohner",
+      "position": "auf der anderen Straßenseite",
+      "observations": "Hier brennt der große Container von der Baustelle, und die Planen am Gerüst brennen auch schon!",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: im Haus wohnen Leute",
+       "Gefahren: Feuer geht am Gerüst hoch, Fenster dahinter",
+       "Zugang: Container steht auf der Straße"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Feuerentwicklung",
+      "trigger": "ohneHilfe",
+      "seconds": 480,
+      "description": "Ein Fenster im ersten Stock platzt, drinnen brennen die Vorhänge",
+      "addTypes": [
+       "LF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1000,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B2 · Containerbrand groß"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-getreidefeld",
+   "draft": {
+    "title": "Getreidefeld brennt beim Dreschen",
+    "event": "Beim Dreschen ist ein Getreidefeld in Brand geraten, starker Wind treibt das Feuer Richtung Waldrand.",
+    "locationQuery": "Feldweg, {ort}",
+    "locationFallbackQuery": "Kreisstraße, {ort}",
+    "hazards": "Ausbreitung zum Wald, Wassermangel",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "TLF",
+     "ELW",
+     "GW-L"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Lohnunternehmer Kurz",
+      "relationship": "Mähdrescherfahrer",
+      "position": "am Feldrand neben der Maschine",
+      "observations": "Hinter meinem Mähdrescher brennt das Feld! Der Wind treibt es voll Richtung Wald.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "hektisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: Wind, Waldrand 200 Meter, Strohballen",
+       "Zugang: Feldweg von der Kreisstraße",
+       "Größe: schon so groß wie ein Fußballfeld"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Feuerentwicklung",
+      "trigger": "ohneHilfe",
+      "seconds": 540,
+      "description": "Das Feuer hat den Waldrand erreicht",
+      "addTypes": [
+       "TLF",
+       "LF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 2200,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "B2 · Flächenbrand groß (ab 100 m2)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-rauch-fabrik",
+   "draft": {
+    "title": "Rauch aus leerer Fabrik",
+    "event": "Aus einem leerstehenden Fabrikgebäude dringt Rauch aus einem Fenster, Jugendliche wurden dort gesehen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "baufälliges Gebäude, eventuell Personen",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "HLF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Albers",
+      "relationship": "Hundebesitzer",
+      "position": "auf dem Gehweg vor dem Gelände",
+      "observations": "Aus der alten Fabrik kommt Rauch aus einem Fenster. Da hängen abends öfter Jugendliche ab.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade gesehen",
+      "unknown": [],
+      "voice": "männlich, etwa 55",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: weiß ich nicht, ob jemand drin ist",
+       "Gefahren: Gebäude ist baufällig",
+       "Zugang: Zaun, Tor mit Kette"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 900,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Gewerbegebiet",
+    "keyword": "B2 · Rauchentwicklung (verdächtiger Rauch)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-bma-lackiererei",
+   "draft": {
+    "title": "Brandmeldeanlage Lackiererei",
+    "event": "Brandmeldeanlage eines Metallbetriebs hat ausgelöst, Pförtner meldet Rauch in der Lackiererei.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Lösemittel, ein Mitarbeiter wird vermisst",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Pförtner Schmid",
+      "relationship": "Pförtner",
+      "position": "an der Pforte am Feuerwehrschlüsseldepot",
+      "observations": "Bei uns hat die Brandmeldeanlage ausgelöst, Melder in der Lackiererei. Ein Mitarbeiter sagt, da ist wirklich Rauch.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor einer Minute",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: Lackiererei ist geräumt, einer wird noch gesucht",
+       "Gefahren: Lösemittel und Lacke in der Halle",
+       "Zugang: Pforte Haupteinfahrt, Laufkarten liegen bereit"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "ZusaetzlicheBetroffene",
+      "trigger": "nachEintreffen",
+      "seconds": 300,
+      "description": "Der vermisste Mitarbeiter wird mit Atemwegsreizung im Lager gefunden",
+      "addTypes": [
+       "RTW"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 900,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Gewerbegebiet",
+    "keyword": "B3 · Brandmeldeanlage 3"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-rauchmelder",
+   "draft": {
+    "title": "Rauchmelder piept seit zwanzig Minuten",
+    "event": "Nachbarin hört seit zwanzig Minuten einen Rauchmelder in der Wohnung nebenan, niemand öffnet.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Bewohner schlafend, angebranntes Essen, leichte Rauchgasexposition",
+    "requiredTypes": [
+     "LF",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "Topf auf dem Herd angebrannt, Bewohner schlief, leichte Kopfschmerzen, möchte nicht mit ins Krankenhaus.",
+    "callers": [
+     {
+      "name": "Erika Moser",
+      "relationship": "Nachbarin",
+      "position": "im Treppenhaus vor der Wohnung",
+      "observations": "Nebenan piept seit zwanzig Minuten der Rauchmelder und keiner macht auf. Riechen tu ich nichts.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "seit zwanzig Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 70",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: da wohnt ein junger Mann, das Auto steht vor dem Haus",
+       "Stockwerk: erster Stock",
+       "Gefahren: ich sehe keinen Rauch"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B1 · Warnmelder (z.B. RWM) ohne konkrete Gefahr"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-papierkorb",
+   "draft": {
+    "title": "Mülleimer an der Haltestelle brennt",
+    "event": "Ein Mülleimer an einer Bushaltestelle brennt, Rauch zieht ins Wartehäuschen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Schülerin Mia",
+      "relationship": "Schülerin",
+      "position": "an der Bushaltestelle",
+      "observations": "Hier brennt ein Mülleimer an der Bushaltestelle, das stinkt voll.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, Jugendliche, etwa 15",
+      "emotion": "unsicher",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: Wartehäuschen aus Plastik daneben"
+      ],
+      "behavior": "Ist unsicher, ob man wegen so etwas die 112 anrufen darf."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 300,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Bushaltestelle",
+    "keyword": "B1 · Kleinbrand im Freien (Papierkorb)"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-brandgeruch-schule",
+   "draft": {
+    "title": "Brandgeruch im Klassenzimmer",
+    "event": "In einem Klassenzimmer riecht es stark verschmort, Ursache unklar, kein sichtbarer Rauch.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "Durchgeschmortes Vorschaltgerät einer Deckenleuchte, Strom abgeschaltet.",
+    "callers": [
+     {
+      "name": "Hausmeister Kübler",
+      "relationship": "Hausmeister",
+      "position": "im Flur vor dem Klassenzimmer",
+      "observations": "Bei uns im Schulhaus riecht es in einem Klassenzimmer total verschmort. Rauch sehe ich keinen.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "seit zehn Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "ruhig",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: die Klasse ist auf dem Hof",
+       "Gefahren: alte Deckenlampen, eine hat geflackert",
+       "Stockwerk: erster Stock"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Schule",
+    "keyword": "B0 · Erkundung Brand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-brandnachschau",
+   "draft": {
+    "title": "Es qualmt wieder",
+    "event": "Nach einem gestrigen Schornsteinbrand qualmt es heute wieder leicht aus einer Wand im Dachgeschoss.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Glutnester in der Holzkonstruktion",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "LF",
+     "DLK"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Böhm",
+      "relationship": "Hausbesitzer",
+      "position": "im Dachgeschoss",
+      "observations": "Gestern war die Feuerwehr wegen dem Schornstein da. Jetzt kommt oben im Dachgeschoss wieder Qualm aus der Wand neben dem Kamin.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "seit einer Viertelstunde",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "beunruhigt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: niemand",
+       "Gefahren: Holzbalken direkt am Kamin",
+       "Stockwerk: Dachgeschoss"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 600,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B0 · Brandnachschau"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-keller-mfh",
+   "draft": {
+    "title": "Keller brennt, Bewohner auf den Balkonen",
+    "event": "Kellerbrand in einem Mehrfamilienhaus, Treppenhaus komplett verraucht, Bewohner rufen von den Balkonen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "verrauchter einziger Rettungsweg",
+    "patients": 4,
+    "patientCondition": "mehrere Bewohner mit leichter Rauchgasintoxikation",
+    "requiredTypes": [
+     "HLF",
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW",
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Ali Demir",
+      "relationship": "Bewohner",
+      "position": "auf dem Balkon im ersten Stock",
+      "observations": "Bei uns brennt der Keller, das ganze Treppenhaus ist schwarz! Wir kommen nicht mehr raus.",
+      "consciousness": "Mir geht es gut, meine Kinder husten.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: wir sind vier, im Haus wohnen acht Familien",
+       "Stockwerk: wir sind im ersten Stock",
+       "Gefahren: Rauch kommt unter der Wohnungstür durch"
+      ],
+      "behavior": ""
+     },
+     {
+      "name": "Herr Baumann",
+      "relationship": "Passant",
+      "position": "auf dem Gehweg",
+      "observations": "Hier stehen in dem Haus überall Leute auf den Balkonen und rufen, unten aus dem Keller kommt Rauch.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "gerade gesehen",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "aufgeregt",
+      "delaySeconds": 60,
+      "answers": [
+       "Anzahl Betroffene: auf mindestens fünf Balkonen Leute"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "ZusaetzlicheBetroffene",
+      "trigger": "nachEintreffen",
+      "seconds": 420,
+      "description": "Im dritten Stock wird eine bewusstlose Person in der Wohnung gefunden",
+      "addTypes": [
+       "RTW",
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1500,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B4 · Kellerbrand"
+   },
+   "town": "",
+   "large": true,
+   "twist": ""
+  },
+  {
+   "id": "br-chlor-baumarkt",
+   "draft": {
+    "title": "Brand im Gartenlager mit Poolchemie",
+    "event": "Im Außenlager eines Baumarkts brennen Paletten mit Poolchemikalien, gelblicher Rauch.",
+    "locationQuery": "Baumarkt, {ort}",
+    "locationFallbackQuery": "Gewerbegebiet, {ort}",
+    "hazards": "Chlorgasbildung, Windrichtung beachten, Warnung der Bevölkerung",
+    "patients": 1,
+    "patientCondition": "ein Mitarbeiter mit Reizgasinhalation",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "ELW",
+     "GW-A",
+     "CBRN",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Sonderlagen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Marktleiterin Funk",
+      "relationship": "Marktleiterin",
+      "position": "auf dem Kundenparkplatz",
+      "observations": "Bei uns im Außenlager brennen Paletten, da steht auch die Poolchemie mit Chlor. Der Rauch ist ganz gelblich.",
+      "consciousness": "Mir geht es gut, ein Mitarbeiter hustet stark.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 45",
+      "emotion": "angespannt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: ein Mitarbeiter mit Husten, der Markt wird geräumt",
+       "Gefahren: Chlortabletten, Dünger, Gasflaschen im Lager",
+       "Zugang: Lieferzufahrt hinten"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Baumarkt",
+    "keyword": "412 · Brand, gefährliche Güter"
+   },
+   "town": "Waiblingen",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-schreinerei",
+   "draft": {
+    "title": "Späneabsaugung brennt",
+    "event": "In einer Schreinerei brennt die Späneabsaugung, Feuer im Spänesilo, ein Mitarbeiter verletzt.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Staubexplosionsgefahr im Silo",
+    "patients": 1,
+    "patientCondition": "Verbrennung zweiten Grades an der Hand",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Schreinermeister Koch",
+      "relationship": "Inhaber",
+      "position": "vor der Werkstatt",
+      "observations": "Bei uns brennt die Absaugung und das Silo mit den Spänen! Mein Geselle hat sich die Hand verbrannt.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 55",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: ein Mitarbeiter, Hand verbrannt",
+       "Gefahren: Holzstaub, Lackraum nebenan",
+       "Zugang: Hof über die Einfahrt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "Handchirurgie",
+    "locationKind": "objekt",
+    "objectType": "Gewerbegebiet",
+    "keyword": "B4 · Brand Gewerbebetrieb"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-pv-dach",
+   "draft": {
+    "title": "Solaranlage auf dem Dach brennt",
+    "event": "Auf dem Dach eines Einfamilienhauses brennt die Photovoltaikanlage, Rauch dringt in den Dachboden.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "elektrische Spannung der Photovoltaikanlage, Batteriespeicher",
+    "patients": 0,
+    "patientCondition": "keine Verletzten",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "ELW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": false,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Ralf Kienzle",
+      "relationship": "Hausbesitzer",
+      "position": "im Garten",
+      "observations": "Auf meinem Dach brennt die Solaranlage! Unter den Platten kommen Flammen raus und auf dem Dachboden ist Rauch.",
+      "consciousness": "Mir geht es gut.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: alle draußen",
+       "Gefahren: die Anlage hat Strom, Speicher steht im Keller",
+       "Zugang: Einfahrt rechts am Haus"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1800,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "B4 · Dachstuhlbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "br-restaurantkueche",
+   "draft": {
+    "title": "Abzugshaube im Restaurant brennt",
+    "event": "In einer Restaurantküche hat die Fritteuse Feuer gefangen, die Flammen sind in die Abzugshaube gezogen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Brandausbreitung über den Abluftkanal",
+    "patients": 1,
+    "patientCondition": "Verbrennung am Unterarm",
+    "requiredTypes": [
+     "HLF",
+     "LF",
+     "DLK",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "FW Brand"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Frau Nguyen",
+      "relationship": "Inhaberin",
+      "position": "vor dem Restaurant",
+      "observations": "In unserer Küche hat die Fritteuse gebrannt und jetzt brennt es oben in der Abzugshaube! Die Gäste sind draußen.",
+      "consciousness": "Mir geht es gut, ein Koch hat sich am Arm verbrannt.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: 30 Gäste draußen, ein Koch mit verbranntem Arm",
+       "Gefahren: Abzugskanal geht durch das ganze Haus bis aufs Dach",
+       "Schon getan: Feuerlöscher benutzt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": true,
+    "fireSeconds": 1200,
+    "hospitalNeed": "nächstes Krankenhaus",
+    "locationKind": "objekt",
+    "objectType": "Gaststätte",
+    "keyword": "B3 · Küchenbrand"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  }
+ ]
+}

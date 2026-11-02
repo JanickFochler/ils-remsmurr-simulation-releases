@@ -1,0 +1,1513 @@
+{
+ "id": "rd-spezial",
+ "title": "Rettungsdienst Spezial",
+ "description": "Kinder, Schwangere, Vergiftungen und seltene Notfälle – von Krupp bis Aortendissektion.",
+ "version": 1,
+ "author": "ILS Rems-Murr Simulation",
+ "cases": [
+  {
+   "id": "rs-krupp",
+   "draft": {
+    "title": "Kleinkind bellt und pfeift",
+    "event": "Kind, 2 Jahre, nachts plötzlich bellender Husten und pfeifende Einatmung.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Pseudokrupp mit inspiratorischem Stridor",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Atmung"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Sabrina Wagner",
+      "relationship": "Mutter",
+      "position": "im Kinderzimmer, Kind auf dem Arm",
+      "observations": "Mein Sohn hustet ganz komisch, wie ein Seehund, und beim Einatmen pfeift es!",
+      "consciousness": "Er ist wach und weint.",
+      "timeline": "seit einer halben Stunde, nachts aufgewacht",
+      "unknown": [],
+      "voice": "weiblich, etwa 30",
+      "emotion": "ängstlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: zwei Jahre",
+       "Atmung: pfeift beim Einatmen, die Haut am Hals zieht sich rein",
+       "Fieber: ein bisschen, 38,2",
+       "Schon getan: ans offene Fenster gestellt",
+       "Vorerkrankungen: hatte das letzten Winter schon mal"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 600,
+      "description": "Die Lippen werden bläulich, er wird ganz ruhig",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "223 · Krupp-Anfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-meningitis",
+   "draft": {
+    "title": "Fieber, Nackensteife, Flecken",
+    "event": "Jugendlicher, 17, hohes Fieber, starke Kopfschmerzen, steifer Nacken, rote Punkte an den Beinen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Infektionsgefahr für die Einsatzkräfte",
+    "patients": 1,
+    "patientCondition": "Verdacht auf Meningokokken-Meningitis mit Petechien",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Neurologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "Verdacht auf Meningitis, Petechien an beiden Beinen, Infektionsschutz angelegt.",
+    "callers": [
+     {
+      "name": "Petra Schuster",
+      "relationship": "Mutter",
+      "position": "am Bett ihres Sohnes, Dachgeschoss",
+      "observations": "Mein Sohn hat über 40 Fieber, ganz schlimme Kopfschmerzen und kann den Kopf nicht nach vorne nehmen. Und er hat so kleine rote Punkte an den Beinen.",
+      "consciousness": "Er ist wach, aber ganz schläfrig und lichtempfindlich.",
+      "timeline": "seit heute Mittag, wird immer schlimmer",
+      "unknown": [],
+      "voice": "weiblich, etwa 45",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 17",
+       "Atmung: schnell",
+       "Verletzung: keine, nur die Punkte, gehen beim Drücken nicht weg",
+       "Stockwerk: Dachgeschoss, steile Treppe",
+       "Vorerkrankungen: keine"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Neurologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "262 · Neurologischer Notfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-anaphylaxie-kind",
+   "draft": {
+    "title": "Erdnuss auf dem Kindergeburtstag",
+    "event": "Kind, 6, auf einem Kindergeburtstag Kuchen mit Erdnüssen gegessen, Lippen schwellen, pfeifende Atmung.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Anaphylaxie Grad III bei Erdnussallergie",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Sonstige Stichworte"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Jens Albrecht",
+      "relationship": "Vater des Geburtstagskindes",
+      "position": "im Wohnzimmer beim Kind",
+      "observations": "Ein Junge auf dem Kindergeburtstag hat eine Erdnussallergie, er hat Kuchen gegessen und jetzt schwellen die Lippen an und er atmet ganz komisch!",
+      "consciousness": "Er ist wach, kratzt sich überall.",
+      "timeline": "vor fünf Minuten gegessen",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: sechs",
+       "Atmung: pfeift, hustet",
+       "Verletzung: rote Quaddeln am ganzen Körper",
+       "Vorerkrankungen: Erdnussallergie, die Mutter ist nicht da",
+       "Schon getan: wir haben keinen Notfallpen gefunden",
+       "Anzahl Betroffene: nur der eine Junge, zehn andere Kinder sind hier"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 420,
+      "description": "Er wird ganz schlapp und blass, die Stimme ist heiser",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "373 · Anaphylaxie"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-tabletten-kleinkind",
+   "draft": {
+    "title": "Kleinkind hat Omas Tabletten gegessen",
+    "event": "Kind, 2, hat eine Blisterpackung Blutdrucktabletten der Großmutter gefunden und mehrere gegessen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Intoxikation mit Kalziumkanalblocker, beginnender Blutdruckabfall",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Intoxikationen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Gisela Brandt",
+      "relationship": "Großmutter",
+      "position": "in der Küche, Enkel auf dem Schoß",
+      "observations": "Mein Enkel hat meine Tabletten erwischt! Mindestens vier fehlen, das sind meine Blutdrucktabletten.",
+      "consciousness": "Er ist wach und spielt, aber ein bisschen müde.",
+      "timeline": "vor etwa zwanzig Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 70",
+      "emotion": "aufgelöst",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: zwei Jahre",
+       "Atmung: normal",
+       "Medikamente: Amlodipin, fünf Milligramm, die Packung habe ich hier",
+       "Gewicht: etwa zwölf Kilo",
+       "Schon getan: Mund ausgewischt, nichts zu trinken gegeben"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 720,
+      "description": "Er ist ganz blass und lässt sich kaum noch wecken",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "243 · Intoxikation Medikamente"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-blutung-schwanger",
+   "draft": {
+    "title": "Schwangere blutet stark",
+    "event": "Schwangere, 34. Woche, plötzlich starke Blutung und harter, schmerzhafter Bauch.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Verdacht auf vorzeitige Plazentalösung, Schockzeichen",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Gynäkologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Lukas Hoffmann",
+      "relationship": "Ehemann",
+      "position": "im Bad bei seiner Frau",
+      "observations": "Meine Frau ist in der 34. Woche schwanger und blutet auf einmal ganz stark! Der Bauch ist steinhart und tut ihr weh.",
+      "consciousness": "Sie ist wach, aber ganz blass.",
+      "timeline": "seit zehn Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 35",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 31",
+       "Blutung: ein ganzes Handtuch voll",
+       "Schmerz: Dauerschmerz, keine Wehen",
+       "Schwangerschaft: 34. Woche, das zweite Kind",
+       "Vorerkrankungen: Bluthochdruck in der Schwangerschaft"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Geburtshilfe",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "360 · Blutung vaginal"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-geburt-auto",
+   "draft": {
+    "title": "Geburt auf dem Parkplatz",
+    "event": "Frau mit Wehen auf dem Weg in die Klinik, Ehemann hält auf einem Parkplatz an, Kopf des Kindes sichtbar.",
+    "locationQuery": "Parkplatz, {ort}",
+    "locationFallbackQuery": "Hauptstraße, {ort}",
+    "hazards": "keine",
+    "patients": 2,
+    "patientCondition": "Sturzgeburt, Neugeborenes und Mutter",
+    "requiredTypes": [
+     "RTW",
+     "NEF",
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Gynäkologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Murat Yilmaz",
+      "relationship": "Ehemann",
+      "position": "am Auto auf dem Parkplatz",
+      "observations": "Meine Frau kriegt das Baby, jetzt sofort! Wir stehen auf einem Parkplatz, man sieht schon den Kopf!",
+      "consciousness": "Sie ist wach und presst.",
+      "timeline": "Wehen seit zwei Stunden, jetzt alle Minute",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 28",
+       "Schwangerschaft: 39. Woche, das dritte Kind",
+       "Blutung: etwas, Fruchtwasser ist abgegangen",
+       "Zugang: Parkplatz direkt an der Straße, Warnblinker an"
+      ],
+      "behavior": "Sehr aufgeregt, folgt aber Anweisungen, wenn man ruhig und klar spricht."
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "ZusaetzlicheBetroffene",
+      "trigger": "ohneHilfe",
+      "seconds": 420,
+      "description": "Das Baby ist da, es ist ganz blau und schreit nicht",
+      "addTypes": [
+       "RTW"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Geburtshilfe",
+    "locationKind": "strasse",
+    "objectType": "",
+    "keyword": "361 · Geburt"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-aortendissektion",
+   "draft": {
+    "title": "Reißender Schmerz im Rücken",
+    "event": "Mann, 64, plötzlich reißender Schmerz zwischen den Schulterblättern, kaltschweißig.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Verdacht auf Aortendissektion",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "Blutdruckdifferenz zwischen beiden Armen, Verdacht auf Aortendissektion, Anmeldung Herzchirurgie erbeten.",
+    "callers": [
+     {
+      "name": "Ingrid Mayer",
+      "relationship": "Ehefrau",
+      "position": "im Wohnzimmer bei ihm",
+      "observations": "Mein Mann hat ganz plötzlich einen Schmerz im Rücken bekommen, er sagt, es zerreißt ihn. Er schwitzt total.",
+      "consciousness": "Er ist wach und stöhnt.",
+      "timeline": "vor zehn Minuten, ganz plötzlich",
+      "unknown": [],
+      "voice": "weiblich, etwa 60",
+      "emotion": "ängstlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 64",
+       "Schmerz: zwischen den Schulterblättern, wandert nach unten",
+       "Atmung: geht",
+       "Vorerkrankungen: hoher Blutdruck, nimmt die Tabletten nicht regelmäßig"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Herzchirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "201 · Akuter Thoraxschmerz"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-lungenoedem",
+   "draft": {
+    "title": "Brodeln beim Atmen",
+    "event": "Frau, 82, nachts schwere Luftnot, sitzt am offenen Fenster, Atmung brodelt hörbar.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "kardiales Lungenödem",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Thomas Riedel",
+      "relationship": "Sohn",
+      "position": "bei ihr im Schlafzimmer, wohnt im selben Haus",
+      "observations": "Meine Mutter kriegt keine Luft, sie sitzt am Fenster und man hört es richtig brodeln, wenn sie atmet.",
+      "consciousness": "Sie ist wach, kann aber nur ein, zwei Wörter sagen.",
+      "timeline": "seit einer Stunde schlimmer",
+      "unknown": [],
+      "voice": "männlich, etwa 55",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 82",
+       "Atmung: ganz schnell, brodelt, rosa Schaum beim Husten",
+       "Vorerkrankungen: Herzschwäche, Wassertabletten",
+       "Stockwerk: erster Stock, Treppe eng"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kardiologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "208 · Lungenödem kardial"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-co-gastherme",
+   "draft": {
+    "title": "Ganze Familie hat Kopfweh",
+    "event": "Familie mit Kopfschmerzen, Übelkeit und Schwindel, CO-Warner im Bad piept, Gastherme im Bad.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "Kohlenmonoxid in der Wohnung",
+    "patients": 4,
+    "patientCondition": "CO-Vergiftung, ein Erwachsener mit Bewusstseinsstörung",
+    "requiredTypes": [
+     "RTW",
+     "RTW",
+     "NEF",
+     "LF"
+    ],
+    "expectedKeywordGroups": [
+     "Intoxikationen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "CO-Messung positiv, vier Betroffene, ein Patient mit deutlichen Symptomen, Druckkammer anfragen.",
+    "callers": [
+     {
+      "name": "Sandra Keller",
+      "relationship": "Mutter",
+      "position": "vor dem Haus mit den Kindern",
+      "observations": "Wir haben alle so Kopfweh und mir ist schwindelig. Jetzt piept auch noch dieses Gerät im Bad, wo die Therme hängt.",
+      "consciousness": "Ich bin wach, die Kinder auch, mein Mann ist ganz schläfrig.",
+      "timeline": "seit heute Morgen",
+      "unknown": [],
+      "voice": "weiblich, etwa 40",
+      "emotion": "verunsichert",
+      "delaySeconds": 0,
+      "answers": [
+       "Anzahl Betroffene: wir sind zu viert, zwei Kinder",
+       "Gefahren: der Melder piept immer noch, Fenster habe ich aufgemacht",
+       "Bewusstsein: mein Mann ist sehr schläfrig und verwirrt",
+       "Schon getan: wir sind alle draußen"
+      ],
+      "behavior": "Denkt zuerst an einen Infekt; erwähnt den piependen Melder erst nach Nachfrage zu Geräten oder Gefahren."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Druckkammer / Innere",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "242 · Intoxikation Inhalativ"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-stromunfall",
+   "draft": {
+    "title": "Elektriker bekommt Schlag",
+    "event": "Elektriker, 35, an einem Verteilerkasten einen Stromschlag bekommen, Herzrasen, Brandmarke an der Hand.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Starkstromunfall mit Herzrhythmusstörung und Strommarken",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Unfälle"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Andreas Lang",
+      "relationship": "Kollege",
+      "position": "in der Halle beim Verletzten",
+      "observations": "Mein Kollege hat am Schaltschrank einen Stromschlag gekriegt, 400 Volt! Er sitzt jetzt am Boden, die Hand ist schwarz.",
+      "consciousness": "Er ist wach, sagt, sein Herz stolpert.",
+      "timeline": "vor drei Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 40",
+      "emotion": "aufgeregt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 35",
+       "Verletzung: Brandmarke an der rechten Hand und am Fuß",
+       "Atmung: normal",
+       "Gefahren: Strom ist abgeschaltet, Sicherung raus"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kardiologie",
+    "locationKind": "objekt",
+    "objectType": "Gewerbegebiet",
+    "keyword": "325 · Stromunfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-veraetzung-kueche",
+   "draft": {
+    "title": "Rohrreiniger ins Gesicht",
+    "event": "Küchenhilfe, 24, hat beim Reinigen konzentrierten Rohrreiniger ins Gesicht und in ein Auge bekommen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Laugenverätzung Gesicht und rechtes Auge",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Herr Ivanović",
+      "relationship": "Koch",
+      "position": "in der Restaurantküche am Waschbecken",
+      "observations": "Unsere Küchenhilfe hat Rohrreiniger ins Gesicht gekriegt, auch ins Auge! Sie schreit, das brennt.",
+      "consciousness": "Sie ist wach.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "hektisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 24",
+       "Verletzung: rechtes Auge und Wange, Haut ganz rot",
+       "Schon getan: Wasser drüber, aber sie macht das Auge nicht auf",
+       "Gefahren: Flasche ist noch offen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Augenklinik",
+    "locationKind": "objekt",
+    "objectType": "Gaststätte",
+    "keyword": "312 · Verätzung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-jagdunfall",
+   "draft": {
+    "title": "Treiber bei der Jagd getroffen",
+    "event": "Bei einer Treibjagd ist ein Treiber von Schrot am Oberschenkel und an der Hüfte getroffen worden.",
+    "locationQuery": "Wanderparkplatz, {ort}",
+    "locationFallbackQuery": "Waldweg, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Schrotschussverletzung Oberschenkel, mäßige Blutung",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Jagdleiter Wieland",
+      "relationship": "Jagdleiter",
+      "position": "im Wald beim Verletzten",
+      "observations": "Bei unserer Treibjagd ist ein Treiber angeschossen worden, Schrot ins Bein. Es blutet ziemlich.",
+      "consciousness": "Er ist wach, hat Schmerzen.",
+      "timeline": "vor fünf Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 60",
+      "emotion": "gefasst",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 45",
+       "Verletzung: rechter Oberschenkel und Hüfte, viele kleine Löcher",
+       "Blutung: läuft, wir drücken drauf",
+       "Gefahren: die Jagd ist abgeblasen, alle Waffen entladen",
+       "Zugang: Forstweg, jemand mit Warnweste wartet am Wanderparkplatz"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "306 · Schussverletzung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-status",
+   "draft": {
+    "title": "Krampfanfall hört nicht auf",
+    "event": "Mann, 29, Epileptiker, krampft seit acht Minuten ohne Pause.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Status epilepticus",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Neurologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Lea Fuchs",
+      "relationship": "Freundin",
+      "position": "im Wohnzimmer bei ihm",
+      "observations": "Mein Freund hat einen epileptischen Anfall und der hört nicht auf! Schon acht Minuten!",
+      "consciousness": "Er zuckt am ganzen Körper, reagiert nicht.",
+      "timeline": "seit acht Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 25",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 29",
+       "Atmung: schnarchend, Schaum vorm Mund",
+       "Vorerkrankungen: Epilepsie, hat die Tabletten gewechselt",
+       "Medikamente: Notfallmedikament liegt hier, weiß nicht wie",
+       "Verletzung: hat sich auf die Zunge gebissen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 480,
+      "description": "Er wird ganz blau im Gesicht",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Neurologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "261 · Krampfanfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-suizidversuch",
+   "draft": {
+    "title": "Abschiedsnachricht gefunden",
+    "event": "Frau, 23, hat Freundin eine Abschiedsnachricht geschickt, Freundin findet sie schläfrig mit leeren Tablettenpackungen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Mischintoxikation in suizidaler Absicht, somnolent",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Psychiatrie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Jana Wolf",
+      "relationship": "Freundin",
+      "position": "in der Wohnung bei ihr, Tür war offen",
+      "observations": "Meine Freundin hat mir geschrieben, dass sie nicht mehr will. Jetzt liegt sie im Bett und ist kaum wach, überall leere Tablettenpackungen.",
+      "consciousness": "Sie macht die Augen auf, wenn ich sie anschreie, sagt aber nichts.",
+      "timeline": "Nachricht vor einer Stunde",
+      "unknown": [],
+      "voice": "weiblich, etwa 25",
+      "emotion": "aufgelöst",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 23",
+       "Atmung: langsam, aber regelmäßig",
+       "Medikamente: Schlaftabletten und Schmerztabletten, ich habe die Packungen",
+       "Alkohol: eine leere Weinflasche",
+       "Vorerkrankungen: Depression, ist in Behandlung"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere / Psychiatrie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "271 · Suizid / Suizidversuch"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-partydrogen",
+   "draft": {
+    "title": "Überhitzt nach Partydrogen",
+    "event": "Mann, 20, auf einem Stadtfest nach Partydrogen überhitzt, verwirrt, Herzrasen.",
+    "locationQuery": "Festplatz, {ort}",
+    "locationFallbackQuery": "Stadtpark, {ort}",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Amphetamin-Intoxikation mit Hyperthermie",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Intoxikationen"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Nico Brenner",
+      "relationship": "Kumpel",
+      "position": "hinter der Bühne beim Freund",
+      "observations": "Mein Kumpel hat was genommen, so Pillen, und jetzt ist er total heiß, redet wirres Zeug und sein Herz rast voll.",
+      "consciousness": "Er ist wach, aber völlig durcheinander.",
+      "timeline": "vor einer Stunde genommen",
+      "unknown": [],
+      "voice": "männlich, etwa 20",
+      "emotion": "nervös",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 20",
+       "Atmung: ganz schnell",
+       "Medikamente: weiß nicht, was das für Pillen waren, Ecstasy oder so",
+       "Verletzung: keine",
+       "Zugang: hinter der Hauptbühne, Ordner kann zeigen"
+      ],
+      "behavior": "Hat Angst vor Ärger mit der Polizei und sagt erst auf ruhige Nachfrage, was genommen wurde."
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 600,
+      "description": "Er fängt an zu krampfen",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "freigelaende",
+    "objectType": "",
+    "keyword": "241 · Intoxikation Drogen"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-schenkelhals",
+   "draft": {
+    "title": "Bewohnerin aus dem Bett gefallen",
+    "event": "Bewohnerin, 89, im Pflegeheim aus dem Bett gefallen, Bein verkürzt und nach außen gedreht.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Schenkelhalsfraktur rechts unter Antikoagulation",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Pfleger Ahmeti",
+      "relationship": "Pflegekraft",
+      "position": "im Zimmer bei der Bewohnerin, zweiter Stock",
+      "observations": "Bei uns ist eine Bewohnerin aus dem Bett gefallen, das rechte Bein ist kürzer und nach außen gedreht.",
+      "consciousness": "Sie ist wach und orientiert wie immer.",
+      "timeline": "vor zwanzig Minuten gefunden",
+      "unknown": [],
+      "voice": "männlich, etwa 35",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 89",
+       "Verletzung: rechte Hüfte, kann nicht aufstehen",
+       "Vorerkrankungen: Herzschwäche, nimmt Blutverdünner",
+       "Stockwerk: zweiter Stock, Aufzug vorhanden"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Unfallchirurgie",
+    "locationKind": "objekt",
+    "objectType": "Pflegeheim",
+    "keyword": "304 · Schenkelhalsfraktur"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-hypotonie-dialyse",
+   "draft": {
+    "title": "Nach der Dialyse umgekippt",
+    "event": "Mann, 70, nach der Dialyse zuhause kollabiert, Blutdruck 80 zu 50.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Hypotonie nach Dialyse",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Renate Kurz",
+      "relationship": "Ehefrau",
+      "position": "im Flur bei ihm",
+      "observations": "Mein Mann kommt gerade von der Dialyse und ist im Flur umgekippt. Ich habe gemessen, 80 zu 50.",
+      "consciousness": "Er ist wieder wach, aber ganz schwach.",
+      "timeline": "vor zehn Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 70",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 70",
+       "Atmung: normal",
+       "Vorerkrankungen: Dialyse dreimal die Woche, Zucker",
+       "Verletzung: keine, ist langsam hingerutscht"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere / Nephrologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "204 · Hypotonie"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-pneumonie",
+   "draft": {
+    "title": "Opa hustet und ist verwirrt",
+    "event": "Mann, 86, seit Tagen Husten und Fieber, heute verwirrt und schläfrig.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Pneumonie mit Verdacht auf Sepsis",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Atmung"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Melanie Seitz",
+      "relationship": "Enkelin",
+      "position": "bei ihm in der Wohnung, Erdgeschoss",
+      "observations": "Mein Opa hustet seit ein paar Tagen und hat Fieber. Heute erkennt er mich kaum, das ist sonst nie so.",
+      "consciousness": "Er ist wach, aber verwirrt.",
+      "timeline": "seit drei Tagen, heute schlimmer",
+      "unknown": [],
+      "voice": "weiblich, etwa 30",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 86",
+       "Atmung: schnell, rasselt",
+       "Fieber: 39,4",
+       "Vorerkrankungen: Herz, Parkinson",
+       "Zugang: Erdgeschoss, Haustür offen"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Innere",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "224 · Bronchitis / Pneumonie"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-katheter",
+   "draft": {
+    "title": "Katheter verstopft",
+    "event": "Pflegedienst meldet: Dauerkatheter bei bettlägerigem Patienten verstopft, Unterbauch prall.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Harnverhalt bei verstopftem Dauerkatheter",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Urologie"
+    ],
+    "expectedPriority": 3,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Schwester Annette",
+      "relationship": "Pflegedienst",
+      "position": "beim Patienten im Schlafzimmer",
+      "observations": "Ambulanter Pflegedienst. Bei meinem Patienten ist der Dauerkatheter verstopft, seit dem Morgen kommt nichts mehr. Der Bauch ist ganz prall.",
+      "consciousness": "Er ist wach und unruhig.",
+      "timeline": "seit heute früh",
+      "unknown": [],
+      "voice": "weiblich, etwa 50",
+      "emotion": "sachlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 81",
+       "Vorerkrankungen: Prostata, bettlägerig nach Schlaganfall",
+       "Schmerz: Unterbauch, drückt",
+       "Stockwerk: erster Stock, Treppe, Patient muss getragen werden",
+       "Grund: Urologe und Hausarzt nicht erreichbar"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Urologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "280 · Katheterwechsel"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-nachblutung-hno",
+   "draft": {
+    "title": "Kind spuckt Blut nach Mandel-OP",
+    "event": "Kind, 7, sechs Tage nach Mandelentfernung, spuckt plötzlich hellrotes Blut.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Nachblutung nach Tonsillektomie",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "HNO"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Stefanie Roth",
+      "relationship": "Mutter",
+      "position": "im Bad beim Kind",
+      "observations": "Meine Tochter hatte vor sechs Tagen die Mandeln raus und jetzt spuckt sie ganz viel Blut!",
+      "consciousness": "Sie ist wach und hat Angst.",
+      "timeline": "seit fünf Minuten",
+      "unknown": [],
+      "voice": "weiblich, etwa 35",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: sieben",
+       "Blutung: hellrot, schon eine halbe Tasse",
+       "Atmung: hustet, schluckt Blut",
+       "Schon getan: sie sitzt vornübergebeugt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [
+     {
+      "kind": "Verschlechterung",
+      "trigger": "ohneHilfe",
+      "seconds": 540,
+      "description": "Sie wird ganz blass und müde",
+      "addTypes": [
+       "NEF"
+      ]
+     }
+    ],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "HNO",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "351 · Nachblutung HNO-OP"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-augenverletzung",
+   "draft": {
+    "title": "Metallsplitter im Auge",
+    "event": "Heimwerker, 48, beim Flexen ohne Schutzbrille Metallsplitter ins linke Auge bekommen.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "perforierende Augenverletzung durch Fremdkörper",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Trauma"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": false,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Klaus Herrmann",
+      "relationship": "Betroffener selbst",
+      "position": "in der Garage",
+      "observations": "Mir ist beim Flexen was ins Auge geflogen, ein Splitter. Ich sehe links nur noch verschwommen und es tränt ohne Ende.",
+      "consciousness": "Ich bin wach.",
+      "timeline": "vor zehn Minuten",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "gefasst",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 48",
+       "Verletzung: linkes Auge, etwas steckt drin, glaube ich",
+       "Schon getan: nichts, ich reibe nicht",
+       "Wer ist dabei: bin allein, kann aber zur Tür"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Augenklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "301 · Augenverletzung"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-beinarterie",
+   "draft": {
+    "title": "Bein plötzlich kalt und weiß",
+    "event": "Mann, 67, starker Raucher, plötzlich Schmerzen im linken Bein, Bein kalt, blass und taub.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "akuter arterieller Verschluss linkes Bein",
+    "requiredTypes": [
+     "RTW"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 2,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Helmut Ziegler",
+      "relationship": "Betroffener selbst",
+      "position": "auf dem Sofa",
+      "observations": "Mein linkes Bein ist auf einmal eiskalt und ganz weiß, und es tut höllisch weh. Ich spüre die Zehen kaum.",
+      "consciousness": "Ich bin wach.",
+      "timeline": "seit einer Stunde",
+      "unknown": [],
+      "voice": "männlich, etwa 65",
+      "emotion": "ängstlich",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 67",
+       "Schmerz: ganzes linkes Bein bis zum Knie",
+       "Vorerkrankungen: Raucher, Durchblutungsstörungen, Vorhofflimmern",
+       "Zugang: Wohnung im zweiten Stock, Schlüssel unter der Matte"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Gefäßchirurgie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "202 · Gefäßverschluss"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-eug",
+   "draft": {
+    "title": "Starke Unterbauchschmerzen, kollabiert",
+    "event": "Frau, 27, plötzliche einseitige Unterbauchschmerzen, Periode überfällig, auf der Toilette kollabiert.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Verdacht auf rupturierte Eileiterschwangerschaft, Schock",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Gynäkologie"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Tim Neumann",
+      "relationship": "Partner",
+      "position": "im Bad bei ihr",
+      "observations": "Meine Freundin hat ganz starke Bauchschmerzen links unten und ist gerade auf dem Klo umgekippt!",
+      "consciousness": "Sie ist wieder wach, aber kreidebleich.",
+      "timeline": "Schmerzen seit einer Stunde",
+      "unknown": [],
+      "voice": "männlich, etwa 30",
+      "emotion": "panisch",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 27",
+       "Schmerz: links unten, zieht in die Schulter",
+       "Schwangerschaft: Periode ist zwei Wochen zu spät",
+       "Blutung: ein bisschen Schmierblutung"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Gynäkologie",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "362 · Gynäkologischer Notfall"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-rea-sporthalle",
+   "draft": {
+    "title": "Zusammenbruch beim Badminton",
+    "event": "Mann, 54, beim Badminton in der Sporthalle zusammengebrochen, atmet nicht normal.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "Kreislaufstillstand, Kammerflimmern",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Herz- Kreislauf"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "Reanimation durch Ersthelfer mit Defibrillator, nach zweitem Schock Kreislauf zurück.",
+    "callers": [
+     {
+      "name": "Christian Bauer",
+      "relationship": "Mitspieler",
+      "position": "in der Halle neben ihm",
+      "observations": "Ein Mitspieler ist einfach umgefallen! Er schnappt nur noch so komisch nach Luft.",
+      "consciousness": "Er reagiert überhaupt nicht.",
+      "timeline": "gerade eben",
+      "unknown": [],
+      "voice": "männlich, etwa 50",
+      "emotion": "geschockt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 54",
+       "Atmung: schnappt nur ab und zu",
+       "Schon getan: einer holt den Defi vom Eingang",
+       "Wer ist dabei: acht Leute, einer ist Krankenpfleger",
+       "Zugang: Haupteingang, Tor zum Parkplatz steht offen"
+      ],
+      "behavior": "Folgt Anweisungen zur Herzdruckmassage, zählt laut mit."
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Herzkatheter",
+    "locationKind": "objekt",
+    "objectType": "Sporthalle",
+    "keyword": "211 · Kreislaufstillstand mit T-CPR"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  },
+  {
+   "id": "rs-ketoazidose",
+   "draft": {
+    "title": "Jugendliche mit Diabetes erbricht",
+    "event": "Mädchen, 14, Diabetes Typ 1, seit gestern Übelkeit und Erbrechen, tiefe schnelle Atmung, sehr schläfrig.",
+    "locationQuery": "",
+    "locationFallbackQuery": "",
+    "hazards": "keine",
+    "patients": 1,
+    "patientCondition": "diabetische Ketoazidose",
+    "requiredTypes": [
+     "RTW",
+     "NEF"
+    ],
+    "expectedKeywordGroups": [
+     "Stoffwechsel"
+    ],
+    "expectedPriority": 1,
+    "transportNeeded": true,
+    "transportSignal": true,
+    "onSceneSeconds": 600,
+    "crewReport": "",
+    "callers": [
+     {
+      "name": "Frank Weber",
+      "relationship": "Vater",
+      "position": "in ihrem Zimmer",
+      "observations": "Meine Tochter hat Diabetes und bricht seit gestern. Jetzt atmet sie so tief und schnell und ist kaum wachzukriegen.",
+      "consciousness": "Sie reagiert, wenn ich sie anspreche, schläft aber gleich wieder ein.",
+      "timeline": "seit gestern Abend",
+      "unknown": [],
+      "voice": "männlich, etwa 45",
+      "emotion": "besorgt",
+      "delaySeconds": 0,
+      "answers": [
+       "Alter: 14",
+       "Atmung: tief und schnell, riecht nach Obst",
+       "Zucker: das Gerät zeigt nur HI",
+       "Vorerkrankungen: Diabetes Typ 1, Insulinpumpe, Katheter war abgeknickt"
+      ],
+      "behavior": ""
+     }
+    ],
+    "escalations": [],
+    "technicalRescue": false,
+    "rescueSeconds": 0,
+    "fire": false,
+    "fireSeconds": 0,
+    "hospitalNeed": "Kinderklinik",
+    "locationKind": "wohnhaus",
+    "objectType": "",
+    "keyword": "231 · Stoffwechsel sonstige"
+   },
+   "town": "",
+   "large": false,
+   "twist": ""
+  }
+ ]
+}

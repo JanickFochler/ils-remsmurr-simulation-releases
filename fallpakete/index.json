@@ -30,6 +30,46 @@
    "file": "knifflig.json",
    "sha256": "28B29D60A8E819EC6352125D966CA9D492C12350C72F2E66A32C89521921D0B5",
    "size": 20616
+  },
+  {
+   "id": "rd-spezial",
+   "title": "Rettungsdienst Spezial",
+   "description": "Kinder, Schwangere, Vergiftungen und seltene Notfälle – von Krupp bis Aortendissektion.",
+   "version": 1,
+   "cases": 25,
+   "file": "rd-spezial.json",
+   "sha256": "4178A2A0142D23CB05C80A941AB0FD936CDEB8D5DDAEE2E7BEC6CF17670D0131",
+   "size": 44860
+  },
+  {
+   "id": "brand",
+   "title": "Brandeinsätze",
+   "description": "Von Papierkorb bis Hotelbrand: Tiefgarage, Scheune, E-Bike-Akku, Photovoltaik und Gefahrgut.",
+   "version": 1,
+   "cases": 25,
+   "file": "brand.json",
+   "sha256": "AFD80FD72FC5173BE86AF4FE9DA12D21D4A0BAA66D1686BFD8D14A37AFADB744",
+   "size": 47023
+  },
+  {
+   "id": "technik",
+   "title": "Technische Hilfe & Gefahrgut",
+   "description": "Verschüttet, eingeklemmt, Höhenrettung, Eis, Chlorgas und Strahlenschutz.",
+   "version": 1,
+   "cases": 25,
+   "file": "technik.json",
+   "sha256": "3456BD2221AE712752D30E74FDEB0C086FF360BFEA8CF9531A756DD7D5C6AA8C",
+   "size": 48693
+  },
+  {
+   "id": "mischlagen",
+   "title": "Verkehr, MANV & Mischlagen",
+   "description": "Rettungsdienst und Feuerwehr gemeinsam: Massenunfälle, Bahn, Unwetter, Eigenschutz.",
+   "version": 1,
+   "cases": 25,
+   "file": "mischlagen.json",
+   "sha256": "2AA3E3BEE5C19932A1A654F3AA4270E8AC4B158BB8F65C84D6BF78913F44B841",
+   "size": 52789
   }
  ]
 }
